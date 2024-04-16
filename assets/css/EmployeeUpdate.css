@@ -1,0 +1,93 @@
+/* Account Update */
+.main .content .body {
+    margin-top: 40px;
+}
+
+.main .content .body .employee-update {
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+    display:block;
+    margin:0 auto;
+    width:50%;
+}
+
+.main .content .body .employee-update.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .body .employee-update .employee-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color:#313A46;
+    margin-bottom: 30px;
+}
+
+.main .content .body .employee-update .employee-info .content {
+    display: flex;
+    align-items: center;
+}
+
+.main .content .body .employee-update .employee-info .content .placeholder {
+    color: #313A46;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.main .content .body .employee-update .employee-info .content .text {
+    color: #90979E;
+    font-size: 18px;
+}
+
+.main .content .body .employee-update .employee-info .avatar .update{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main .content .body .employee-update .employee-info .avatar .update .placeholder {
+    color: #313A46;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.main .content .body .employee-update .employee-info .avatar .update .update-button {
+    padding: 0px 20px;
+    color:white;
+    background-color:#fa5c7c;
+}
+
+.main .content .body .employee-update .employee-info .avatar .update .update-button:hover{
+    cursor: pointer;
+    background-color: #ea6882;
+    transition: 0.5s all ease;
+}
+
+.main .content .body .employee-update .employee-info .avatar .pic {
+    margin-top: 10px;
+}
+
+.main .content .body .employee-update .employee-info .avatar .pic img{
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    height: auto;
+    width:100%;
+}
+
+.main .content .body .employee-update .employee-info .back {
+    padding:10px 20px;
+    border:none;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: #18f373;
+    color:white;
+}
+
+.main .content .body .employee-update .employee-info .back:hover{
+    background-color: #1cda6b;
+    transition: 0.5s all ease;
+}
+/* End Account Update */

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    background-color: #F3F4F7;
+    margin:0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body.dark{
+    background-color: #343A40;
+}
+
+
+.container{
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration:none;
+}
+@media (max-width: 1200px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      max-width: calc(100% - 30px);
+    }
+  }

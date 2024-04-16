@@ -1,0 +1,314 @@
+.main .content .body {
+    margin-top: 20px;
+}
+
+.main .content .body .order-detail .order-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .content .body .order-detail .order-first .order-info{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+    width:44%;
+}
+
+.main .content .body .order-detail .order-first .order-info.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .body .order-detail .order-first .order-info .title {
+    color:#90979E;
+    margin-bottom: 20px;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr th {
+    text-align: center;
+    padding:15px 0;
+    background-color: #EFF2F7;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr th:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr th:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr th.dark {
+    background-color: #464F5B;
+    color: #AAB8C5;
+    transition: 0.2s all ease;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr td {
+    text-align: center;
+    padding:15px;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr td:nth-child(1){
+    padding:0;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr td:nth-child(1) .desc.dark {
+    color:white;
+    transition: 0.2s all ease;
+}
+
+.main .content .body .order-detail .order-first.order-info .detail-table table tr td:last-child{
+    padding-right:0 ;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr th:last-child{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr td .desc {
+    color:#313A46;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr td .content {
+    color:#90979E;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr td .date {
+    color:#90979E;
+}
+
+.main .content .body .order-detail .order-first .order-info .detail-table table tr td .name {
+    color:#90979E;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+    width:44%;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .title {
+    color:#90979E;
+    margin-bottom: 20px;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr th {
+    text-align: center;
+    padding:15px 0;
+    background-color: #EFF2F7;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr th:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr th:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr th.dark {
+    background-color: #464F5B;
+    color: #AAB8C5;
+    transition: 0.2s all ease;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td {
+    text-align: center;
+    padding:15px;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td:nth-child(1){
+    padding:0;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td:nth-child(1) .desc.dark {
+    color:white;
+    transition: 0.2s all ease;
+}
+
+.main .content .body .order-detail .order-first.order-detail-info .detail-table table tr td:last-child{
+    padding-right:0 ;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr th:last-child{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td .desc {
+    color:#313A46;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td .price {
+    color:#90979E;
+}
+
+.main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td .price input[name="given-price"] {
+    outline:none;
+    border-radius: 50px;
+    width:35%;
+}
+
+.main .content .body .order-detail .order-second {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+    width:44%;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .head-title {
+    color:#90979E;
+    margin-bottom: 20px;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .first {
+    margin-bottom:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .first .phone-input .phone{
+    display: flex;
+    align-items: center;
+    color: #313A46;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .first .phone-input .phone .check {
+    border:none;
+    padding: 5px 10px;
+    color:white;
+    border-radius: 5px;
+    background-color: #727CF5;
+    margin-left: 10px;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .first .phone-input .phone .check:hover{
+    background-color: #6973E3;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .first .phone-input input[name="phone"]{
+    width:100%;
+    margin-top: 10px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .second input[name="address"]{
+    width:100%;
+    margin-top: 10px;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .second .address-input .address {
+    color: #313A46;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .first .fullname-input .fullname{
+    color: #313A46;
+}
+
+.main .content .body .order-detail .order-second .order-customer-info .detail-customer .first .fullname-input input[name="fullname"]{
+    width:100%;
+    margin-top: 10px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.main .content .body .order-detail .order-second .order-function {
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+    width:44%;
+}
+
+.main .content .body .order-detail .order-second .order-function .title {
+    color:#90979E;
+    margin-bottom: 20px;
+}
+
+.main .content .body .order-detail .order-second .order-function .note .desc {
+    color: #313A46;
+    margin-bottom: 20px;
+}
+
+.main .content .body .order-detail .order-second .order-function .button {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.main .content .body .order-detail .order-second .order-function .button .confirm {
+    padding:10px 15px;
+    color:white;
+    border-radius: 5px;
+    border:none;
+    background-color: #0acf97;
+    margin-right: 20px;
+}
+
+.main .content .body .order-detail .order-second .order-function .button .confirm:hover {
+    background-color: #09bf8c;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+.main .content .body .order-detail .order-second .order-function .button .back {
+    padding:10px 15px;
+    color:white;
+    border-radius: 5px;
+    border:none;
+    background-color: #fa5c7c;
+}
+
+.main .content .body .order-detail .order-second .order-function .button .back:hover {
+    background-color: #ea6882;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+/* End Order Detail */

@@ -1,0 +1,214 @@
+/* Order List */
+.main .content .body {
+    margin-top: 20px;
+}
+
+.main .content .body .order-list-view .customer-info .name{
+    display: flex;
+    align-items: center;
+    color:#90979E;
+    margin-bottom: 5px;
+}
+
+.main .content .body .order-list-view .customer-info .name .placeholder{
+    color:#313A46;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.main .content .body .order-list-view .customer-info .name .content{
+    font-size: 18px;
+}
+
+.main .content .body .order-list-view .customer-info .phone{
+    display: flex;
+    align-items: center;
+    color:#90979E;
+    margin-bottom: 5px;
+}
+
+.main .content .body .order-list-view .customer-info .phone .placeholder{
+    color:#313A46;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.main .content .body .order-list-view .customer-info .phone .content{
+    font-size: 18px;
+}
+
+.main .content .body .order-list-view .customer-info .address{
+    display: flex;
+    align-items: center;
+    color:#90979E;
+}
+
+.main .content .body .order-list-view .customer-info .address .placeholder{
+    color:#313A46;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.main .content .body .order-list-view .customer-info .address .content{
+    font-size: 18px;
+}
+
+.main .content .body .order-list-view .order-content {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #313A46;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.main .content .body .order-list{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+}
+
+.main .content .body .order-list.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .body .order-list .first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Search Input */
+.main .content .body .body-content .first .search-input form{
+    display: flex;
+    align-items: center;
+}
+
+.main .content .body .body-content .first .search-input span {
+    padding:7px;
+    padding-left:13px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius: 5px;
+    background-color: #EFF2F7;
+    font-size: 16px;
+    color:#949BA2;
+    text-align: center;
+}
+
+.main .content .body .body-content .first .search-input input{
+    height:38px;
+    outline: none;
+    border: none;
+    background-color: #EFF2F7;
+    width:auto;
+}
+
+.main .content .body .body-content .first .search-input .search-button {
+    background-color: #0acf97;
+    color:#FFFFFF;
+    border: none;
+    outline: none;
+    padding:7px 20px;
+    flex: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main .content .body .body-content .first .search-input .search-button:hover{
+    background-color: #09bf8c;
+    transition: 0.5s all ease;
+}
+/* End Search Input */
+
+/* Table */
+.main .content .body .order-list table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+/* .main .content .body .body-content .second table tr {
+    display: flex;
+    align-items: center;
+} */
+
+.main .content .body .order-list table tr th {
+    text-align: center;
+    padding:15px 0;
+    background-color: #EFF2F7;
+}
+
+.main .content .body .order-list table tr th:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.main .content .body .order-list table tr th:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main .content .body .order-list table tr td {
+    text-align: center;
+    padding:15px;
+}
+
+.main .content .body .order-list table tr td:nth-child(1){
+    padding:0;
+}
+
+.main .content .body .order-list table tr td:last-child{
+    padding-right:0 ;
+}
+
+.main .content .body .order-list table tr th:last-child{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.main .content .body .order-list table tr td .order-id {
+    color:#90979E;
+}
+
+.main .content .body .order-list table tr td .total-amount {
+    color:#90979E;
+}
+
+.main .content .body .order-list table tr td .given-money {
+    color:#90979E;
+}
+
+.main .content .body .order-list table tr td .paid-back {
+    color:#90979E;
+}
+
+.main .content .body .order-list table tr td .date {
+    color:#90979E;
+}
+
+.main .content .body .order-list table tr td .quantities {
+    color:#90979E;
+}
+
+
+.main .content .body .order-list table tr td .view-detail {
+    border-radius: 5px;
+    color:white;
+    border:none;
+    background-color: rgb(12, 113, 230);
+    padding:4px 15px;
+    outline: none;
+}
+
+.main .content .body .order-list table tr td .view-detail:hover{
+    background-color: rgb(30, 108, 198);
+    transition: 0.5s all ease;
+}
+
+.main .content .body .body-content .second table tr td .action{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#90979E;
+}
+/* End Order List */

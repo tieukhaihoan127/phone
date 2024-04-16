@@ -1,23 +1,18 @@
-body{
-    background-color: #F3F4F7;
-}
 
-body.dark{
-    background-color: #343A40;
-}
-
-/* Body */
-.main .row{
-    height: 100vh;
-    width:101%;
-}
-/* End Body */
-
+/* Admin Dashboard */
 /* Header */
-.main .content{
-    flex: 1;
-    padding-right:0px;
-    padding-left: 0px;
+.main {
+    display: flex;
+    position: relative;
+}
+
+.main .left {
+    width:18%;
+}
+
+.main .right {
+    width:82%;
+    margin-left:18%;
 }
 
 .main .content .header{
@@ -155,10 +150,15 @@ body.dark{
     background-color: #FFFFFF;
     border: 1px #90979E solid;
     border-radius: 5px;
-    width:13.2%;
+    width:14%;
     color: #90979E;
     position: absolute;
     right:20px;
+    display: none;
+}
+
+.main .content .header .admin-menu.show{
+    display: block;
 }
 
 .main .content .header .admin-menu.dark{
@@ -206,12 +206,17 @@ body.dark{
 .main .sider{
     background-color: #313A46; 
     padding-right:0;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
 }
 
-.main .sider .logo {
+.main .sider a {
     display: flex;
     justify-content: center;
-    padding:20px 0;
+    padding: 20px 0;
+    text-decoration: none;
 }
 
 .main .sider .menu ul{
@@ -221,15 +226,15 @@ body.dark{
 }
 
 .main .sider .menu ul li {
-    display: flex;
-    justify-content: flex-start;
+    width:100%;
+    text-align: center;
 }
 
 .main .sider .menu ul li .menu-item{
     display: flex;
     align-items: center;
     padding: 20px 0;
-    padding-left:20px;
+    padding-left:10%;
     color:#8391a2;
 }
 
@@ -245,7 +250,6 @@ body.dark{
 }
 
 .main .sider .menu ul li .menu-item .icon-sider{
-    flex:1;
     text-align: center;
 }
 
@@ -302,6 +306,7 @@ body.dark{
 
 
 /* End Sub Sider */
+/* End Admin Dashboard */
 
 /* Account Management  */
 .main .content .body {
@@ -361,8 +366,8 @@ body.dark{
     align-items: center;
 }
 
-.main .content .body .body-content .first .search-input span {
-    padding:7px;
+.main .content .body .body-content .first .search-input form span {
+    padding:5.8px;
     padding-left:13px;
     border-top-left-radius:5px;
     border-bottom-left-radius: 5px;
@@ -372,20 +377,20 @@ body.dark{
     text-align: center;
 }
 
-.main .content .body .body-content .first .search-input input{
-    height:38px;
+.main .content .body .body-content .first .search-input input[name="search"]{
+    height:31.2px;
     outline: none;
     border: none;
     background-color: #EFF2F7;
     width:auto;
 }
 
-.main .content .body .body-content .first .search-input .search-button {
+.main .content .body .body-content .first .search-input form .search-button {
     background-color: #0acf97;
     color:#FFFFFF;
     border: none;
     outline: none;
-    padding:7px 20px;
+    padding:8.6px 20px;
     flex: 1;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -404,12 +409,8 @@ body.dark{
 
 .main .content .body .body-content .second table {
     width:100%;
+    border-collapse: collapse;
 }
-
-/* .main .content .body .body-content .second table tr {
-    display: flex;
-    align-items: center;
-} */
 
 .main .content .body .body-content .second table tr th {
     text-align: center;
@@ -417,18 +418,29 @@ body.dark{
     background-color: #EFF2F7;
 }
 
+.main .content .body .body-content .second table tr th:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.main .content .body .body-content .second table tr th:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
 .main .content .body .body-content .second table tr td {
     text-align: center;
     padding:15px;
 }
 
-.main .content .body .body-content .second table tr td:nth-child(1){
+/* .main .content .body .body-content .second table tr td:nth-child(1){
     padding:0;
 }
 
 .main .content .body .body-content .second table tr td:last-child{
     padding-right:0 ;
-}
+} */
 
 .main .content .body .body-content .second table tr th:last-child{
     text-align: center;
@@ -446,7 +458,7 @@ body.dark{
     height:30px;
     border-radius: 100%;
     object-fit: cover;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .main .content .body .body-content .second table tr td .employee .name{

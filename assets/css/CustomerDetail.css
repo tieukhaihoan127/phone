@@ -1,0 +1,117 @@
+/* Register Customer Form */
+.main .content .body {
+    margin-top: 6%;
+}
+
+.main .content .body .register-customer{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+    display:block;
+    text-align: center;
+    margin:0 auto;
+    width:40%;
+}
+
+.main .content .body .register-customer.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .body .register-customer .register-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .body .register-customer .register-form .logo {
+    border-radius: 100%;
+    padding:10px;
+    display: flex;
+    height:90px;
+    width:90px;
+    justify-content: center;
+    align-items: center;
+    background-color: #313A46;
+}
+
+.main .content .body .register-customer .register-form .logo img {
+    object-fit: cover;
+    width:100px;
+}
+
+.main .content .body .register-customer .register-form .title{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.main .content .body .register-customer .register-form .first{
+    margin-top: 30px;
+    margin-bottom:30px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main .content .body .register-customer .register-form .first .fullname-input .fullname{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.main .content .body .register-customer .register-form .first .fullname-input input {
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #313A46;
+    padding:0 5px;
+}
+
+.main .content .body .register-customer .register-form .first .phone-input{
+    margin-left: 33px;
+}
+
+.main .content .body .register-customer .register-form .first .phone-input .phone{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.main .content .body .register-customer .register-form .first .phone-input input {
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #313A46;
+    padding:0 5px;
+}
+
+.main .content .body .register-customer .register-form .second {
+    width:79%;
+}
+
+.main .content .body .register-customer .register-form .second .address-input .address{
+    margin-bottom: 10px ;
+    text-align: left;
+}
+
+.main .content .body .register-customer .register-form .second .address-input input{
+    width:100%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #313A46;
+    padding:0 5px;
+}
+
+.main .content .body .register-customer .register-form .submit-phone {
+    padding:10px 20px;
+    border:none;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+    background-color: #18f373;
+    color:white;
+}
+
+.main .content .body .register-customer .register-form .submit-phone:hover{
+    background-color: #1cda6b;
+    transition: 0.5s all ease;
+}
+/* End Register Customer Form */

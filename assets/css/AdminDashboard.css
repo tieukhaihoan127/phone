@@ -1,0 +1,308 @@
+/* Admin Dashboard */
+/* Header */
+.main {
+    display: flex;
+    position: relative;
+}
+
+.main .left {
+    width:18%;
+}
+
+.main .right {
+    width:82%;
+    margin-left:18%;
+}
+
+.main .content .header{
+    padding:0px 20px;
+    background-color: #FFFFFF;
+    position: sticky;
+    top:0;
+}
+
+.main .content .dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .content .header .header-content .current-content{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main .content .header .header-content .current-content.dark{
+    color:white;
+}
+
+.main .content .header .header-content .menu-content{
+    display: flex;
+    align-items: center;
+}
+
+.main .content .header .header-content .menu-content .menu span{
+    margin-right:25px;
+    font-size: 23px;
+    color:#90979E;
+}
+
+.main .content .header .header-content .menu-content .menu span.dark{
+    color:#8391a2;
+    transition: 0.2s all ease;
+}
+
+.main .content .header .header-content .menu-content .menu span:hover{
+    color:#7A83F5;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+.main .content .header .header-content .menu-content .menu span.dark:hover{
+    color:#a8bfdb;
+    transition: 0.5s all ease;
+}
+
+.main .content .header .header-content .menu-content .menu .icon-cart{
+    position: relative;
+}
+
+.main .content .header .header-content .menu-content .menu .icon-cart .number-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: red;
+    color:white;
+    font-size: 12px;
+    width:20px;
+    height:20px;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+}
+
+.main .content .header .header-content .admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #F9FAFD;
+}
+
+.main .content .header .header-content .admin.dark{
+    background-color: #3C4655;
+    transition: 0.2s all ease;
+}
+
+.main .content .header .header-content .admin:hover {
+    cursor: pointer;
+}
+
+.main .content .header .header-content .admin .image{
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    width:30px;
+    height:30px;
+}
+
+.main .content .header .header-content .admin .image img{
+    object-fit: cover;
+    height:30px;
+    width:30px;
+    border-radius: 100%;
+}
+
+.main .content .header .header-content .admin .admin-info {
+    margin-left:12px;
+}
+
+.main .content .header .header-content .admin .admin-info .admin-name{
+    font-weight: 500;
+    color:#90979E;
+}
+
+.main .content .header .header-content .admin .admin-info .role{
+    font-size: 13px;
+    color:#90979E;
+}
+
+.main .content .header .header-content .admin .admin-info .active{
+    color:#7A83F5;
+}
+
+.main .content .header .header-content .admin .icon-down i {
+    font-size: 17px;
+}
+
+/* End Header */
+
+
+/* Admin Menu Info */
+.main .content .header .admin-menu {
+    background-color: #FFFFFF;
+    border: 1px #90979E solid;
+    border-radius: 5px;
+    width:14%;
+    color: #90979E;
+    position: absolute;
+    right:20px;
+    display: none;
+}
+
+.main .content .header .admin-menu.show{
+    display: block;
+}
+
+.main .content .header .admin-menu.dark{
+    background-color: #37404A;
+    border-color: #464F5B;
+}
+
+.main .content .header .admin-menu .menu-desc {
+    font-size: 12px;
+    font-weight: 500;
+    padding:8px 18px;
+}
+
+.main .content .header .admin-menu .menu-info ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .content .header .admin-menu .menu-info ul li .menu-item {
+    display: flex;
+    align-items: center;
+    padding:6px 24px;
+}
+
+.main .content .header .admin-menu .menu-info ul li .menu-item:hover{
+    background-color: #F9FAFD;
+    cursor: pointer;
+}
+
+.main .content .header .admin-menu .menu-info ul li .menu-item.dark:hover{
+    color: white;
+    background-color: #90979E;
+}
+
+.main .content .header .admin-menu .menu-info ul li .menu-item .text{
+    margin-left:12px;
+}
+/* End Admin Menu Info */
+
+/* Sider */
+.main .sider{
+    background-color: #313A46; 
+    padding-right:0;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+}
+
+.main .sider a {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.main .sider .menu ul{
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+}
+
+.main .sider .menu ul li {
+    width:100%;
+    text-align: center;
+}
+
+.main .sider .menu ul li .menu-item{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    padding-left:10%;
+    color:#8391a2;
+}
+
+.main .sider .menu ul li .menu-item:hover{
+    color:#F9FAFD;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+.main .sider .menu ul li .menu-item .text {
+    font-size: 17px;
+    margin-left:15px;
+}
+
+.main .sider .menu ul li .menu-item .icon-sider{
+    text-align: center;
+}
+
+
+.main .sider .menu ul li .menu-item .second{
+    color:#8391a2;
+}
+/* End Sider */
+
+/* Sub Sider */
+.main .subsider{
+    background-color: #313A46; 
+    padding-right:0;
+}
+
+.main .subsider .logo {
+    display: flex;
+    justify-content: center;
+    padding:20px 0;
+}
+
+.main .subsider .menu ul{
+    list-style-type: none;
+    position: relative;
+    padding:0;
+    margin: 0;
+}
+
+.main .subsider .menu ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.main .subsider .menu ul li .menu-item{
+    padding: 20px 0;
+    color:#8391a2;
+}
+
+.main .subsider .menu ul li .menu-item .icon-sider i{
+    font-size: 16px;
+    text-align: center;
+}
+
+.main .subsider .menu ul li .menu-item-hover{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color:#F9FAFD;
+    background-color: #7A83F5;
+    position: absolute;
+    left:0;
+    top:20%;
+}
+
+
+/* End Sub Sider */
+/* End Admin Dashboard */

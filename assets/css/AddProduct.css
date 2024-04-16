@@ -1,0 +1,285 @@
+/* Add Product */
+.main .content .body {
+    margin-top: 3%;
+}
+
+.main .content .body .add-product{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+    display:block;
+    margin:0 auto;
+    width:40%;
+    margin-bottom: 40px;
+}
+
+.main .content .body .add-product.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .body .add-product .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .body .add-product .content .logo {
+    border-radius: 100%;
+    padding:10px;
+    display: flex;
+    height:90px;
+    width:90px;
+    justify-content: center;
+    align-items: center;
+    background-color: #313A46;
+}
+
+.main .content .body .add-product .content .logo img {
+    object-fit: cover;
+    width:100px;
+}
+
+.main .content .body .add-product .content .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.main .content .body .add-product .content form {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+}
+
+.main .content .body .add-product .content form .first {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .content .body .add-product .content form .first label {
+    color: #313A46;
+    margin-bottom: 5px;
+}
+
+.main .content .body .add-product .content form .first input {
+    width:98%;
+    border-radius: 50px;
+    outline:none;
+}
+
+.main .content .body .add-product .content form .second {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main .content .body .add-product .content form .second .import-input {
+    width:56%;
+}
+
+.main .content .body .add-product .content form .second .import-input label{
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .second .import-input input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+}
+
+.main .content .body .add-product .content form .second .retail-input {
+    width:44%;
+}
+
+.main .content .body .add-product .content form .second .retail-input label{
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .second .retail-input input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+}
+
+.main .content .body .add-product .content form .third {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main .content .body .add-product .content form .third .category-input {
+    width:56%;
+}
+
+.main .content .body .add-product .content form .third .category-input label{
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .third .category-input input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+}
+
+.main .content .body .add-product .content form .third .email-input {
+    width:55%;
+}
+
+.main .content .body .add-product .content form .third .email-input label{
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .third .email-input input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+}
+
+.main .content .body .add-product .content form .third .left-input {
+    width:44%;
+    display: flex;
+    align-items: center;
+}
+
+.main .content .body .add-product .content form .third .left-input .dob label {
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .third .left-input .dob input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+    width:85%;
+}
+
+.main .content .body .add-product .content form .third .left-input .gender label {
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .third .left-input .gender input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+    width:80%;
+}
+
+.main .content .body .add-product .content form .third .left-input .gender select {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+    width:98%;
+    padding:2px 0;
+}
+
+.main .content .body .add-product .content form .third .stock-input label{
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .third .stock-input input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+}
+
+.main .content .body .add-product .content form .fourth {
+    margin-top: 20px;
+}
+
+.main .content .body .add-product .content form .fourth .picture {
+    display: flex;
+    align-items: center;
+}
+
+.main .content .body .add-product .content form .fourth .picture label {
+    color: #313A46;
+    margin-right: 15px;
+}
+
+.main .content .body .add-product .content form .fourth .picture button {
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color:white;
+    border-radius: 5px;
+    background-color: #727CF5;
+    font-size: 11px;
+}
+
+.main .content .body .add-product .content form .fourth .picture button:hover {
+    cursor: pointer;
+    background-color: #6973E3;
+    transition: 0.5s all ease;
+}
+
+.main .content .body .add-product .content form .fourth .image {
+    height:auto;
+    margin-top: 20px;
+}
+
+.main .content .body .add-product .content form .fourth .image img {
+    width:100%;
+    aspect-ratio: 4/3;
+    height: auto;
+    object-fit: cover;
+}
+
+.main .content .body .add-product .content form .submit-product {
+    text-align: center;
+    padding:10px 15px;
+    border-radius: 5px;
+    border:none;
+    background-color: #18f373;
+    color: white;
+    margin-top: 20px;
+    display: block;
+}
+
+.main .content .body .add-product .content form .submit-product:hover {
+    background-color: #1cda6b;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+.main .content .body .add-product .content form .fifth {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main .content .body .add-product .content form .fifth .barcode-input {
+    width:56%;
+}
+
+.main .content .body .add-product .content form .fifth .barcode-input label{
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .fifth .barcode-input input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+}
+
+.main .content .body .add-product .content form .fifth .date-input {
+    width:44%;
+}
+
+.main .content .body .add-product .content form .fifth .date-input label{
+    color: #313A46;
+}
+
+.main .content .body .add-product .content form .fifth .date-input input {
+    border-radius: 50px;
+    margin-top: 5px;
+    outline:none;
+}
+
+
+.main .content .body .add-product .content form .product-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+/* End Add Product */

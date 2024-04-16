@@ -1,0 +1,160 @@
+/* Invoice */
+.main .content .body {
+    margin-top: 40px;
+}
+
+.main .content .body .invoice-content{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+}
+
+.main .content .body .invoice-content .first {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.main .content .body .invoice-content .first div {
+    margin-bottom: 5px;
+}
+
+.main .content .body .invoice-content .first div:last-child {
+    margin-bottom:30px ;
+}
+
+.main .content .body .invoice-content .first .image {
+    border-radius: 100%;
+    padding:10px;
+    width:90px;
+    height:90px;
+    background-color: #313A46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main .content .body .invoice-content .first .image img {
+    object-fit: cover;
+    width: 100px;
+}
+
+.main .content .body .invoice-content .second {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #313A46;
+}
+
+.main .content .body .invoice-content .second  .left{
+    width: 50%;
+}
+
+.main .content .body .invoice-content .second  .right{
+    width: 50%;
+    text-align: right;
+}
+
+.main .content .body .invoice-content .second  .left .bill {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+.main .content .body .invoice-content .second  .left .name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.main .content .body .invoice-content .second  .left .address {
+    margin-bottom: 8px;
+}
+
+.main .content .body .invoice-content .second  .left .phone {
+    margin-bottom: 8px;
+}
+
+.main .content .body .invoice-content .second .right .order-id{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.main .content .body .invoice-content .second .right .id {
+    margin-bottom: 10px;
+}
+
+.main .content .body .invoice-content .second .right .employee-name{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.main .content .body .invoice-content .second .right .e-name {
+    margin-bottom: 10px;
+}
+
+.main .content .body .invoice-content .second .right .invoice-date{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.main .content .body .invoice-content .second .right .date {
+    margin-bottom: 10px;
+}
+
+.main .content .body .invoice-content .order-items {
+    margin-top: 15px;
+    color: #313A46;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.main .content .body .invoice-content .invoice-table table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.main .content .body .invoice-content .invoice-table table tr th {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding:15px;
+}
+
+.main .content .body .invoice-content .invoice-table table tr td {
+    border-bottom: 1px solid black;
+    padding:15px;
+    text-align: center;
+}
+
+.main .content .body .invoice-content .invoice-table table tr td .product .product-name {
+    font-size: 18px;
+}
+
+.main .content .body .invoice-content .invoice-table table tr td .product .color{
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.main .content .body .invoice-content .total-amount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 25px;
+    color: #313A46;
+}
+
+.main .content .body .invoice-content .total-amount .desc {
+    margin-right: 10px;
+}
+
+.main .content .body .invoice-content .total-amount .price {
+    font-weight: bold;
+}
+/* End Invoice */

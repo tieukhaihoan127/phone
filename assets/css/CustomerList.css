@@ -1,0 +1,120 @@
+/* Customer List */
+.main .content .body {
+    margin-top: 40px;
+}
+
+.main .content .body .customer-list{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+}
+
+.main .content .body .customer-list.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+
+/* Table */
+.main .content .body .customer-list table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.main .content .body .customer-list table tr th {
+    text-align: center;
+    padding:15px 0;
+    background-color: #EFF2F7;
+}
+
+.main .content .body .customer-list table tr th:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.main .content .body .customer-list table tr th:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main .content .body .customer-list table tr td {
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+/* .main .content .body .customer-list table tr td:nth-child(1){
+    padding-left: 35px;
+} */
+
+.main .content .body .customer-list table tr td:last-child{
+    padding-right:0 ;
+}
+
+.main .content .body .customer-list table tr th:last-child{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.main .content .body .customer-list table tr td .customer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main .content .body .customer-list table tr td .customer img {
+    width:30px;
+    height:30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.main .content .body .customer-list table tr td .customer .name{
+    color:#90979E;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.main .content .body .customer-list table tr td .phone {
+    color:#90979E;
+}
+
+.main .content .body .customer-list table tr td .address {
+    color:#90979E;
+}
+
+
+.main .content .body .customer-list table tr td .purchase-history {
+    border-radius: 5px;
+    color:white;
+    border:none;
+    background-color: rgb(12, 113, 230);
+    padding:4px 15px;
+    outline: none;
+}
+
+.main .content .body .customer-list table tr td .purchase-history:hover{
+    background-color: rgb(30, 108, 198);
+    transition: 0.5s all ease;
+}
+
+.main .content .body .body-content table tr td .action{
+    text-align: center;
+    color:#90979E;
+}
+
+.main .content .body .customer-list table tr td .action .view-customer:hover {
+    color:#7A83F5;
+    transition:0.2s all ease;
+    cursor: pointer;
+}   
+
+.main .content .body .customer-list table tr td .action .view-customer.dark:hover{
+    color: #a8bfdb;
+    transition: 0.5s all ease;
+}
+/* End Table */
+/* End Customer List */

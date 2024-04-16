@@ -18,16 +18,16 @@ adminInfo.addEventListener("mouseleave",() => {
 });
 
 adminInfo.addEventListener("click", () => {
-    if(Number(adminMenuInfo.classList.length) > 1){
-        adminMenuInfo.classList.remove("d-none");
+    if(adminMenuInfo){
+        adminMenuInfo.classList.add("show");
     }
     else{
-        adminMenuInfo.classList.add("d-none");
+        adminMenuInfo.classList.remove("show");
     }
 });
 
 adminMenuInfo.addEventListener("mouseleave",() => {
-    adminMenuInfo.classList.add("d-none");
+    adminMenuInfo.classList.remove("show");
 });
 // End Admin Info
 

@@ -1,0 +1,174 @@
+/* Reporting */
+.main .content .body {
+    margin-top: 40px;
+}
+
+.main .content .body .body-content{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+}
+
+.main .content .body .body-content .reporting-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .content .body .body-content .reporting-content .search-time {
+    display: flex;
+    align-items: center;
+}
+
+.main .content .body .body-content .reporting-content .search-time label {
+    color: #313A46;
+}
+
+.main .content .body .body-content .reporting-content .search-time select {
+    padding:5px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.main .content .body .body-content .reporting-content .specific-time {
+    display: flex;
+    align-items: center;
+}
+
+.main .content .body .body-content .reporting-content .specific-time div {
+    margin-right: 10px;
+    color: #313A46;
+}
+
+.main .content .body .body-content .reporting-content .specific-time input {
+    margin-right: 10px;
+    padding:5px;
+}
+
+.main .content .body .body-content .reporting-content .specific-time button {
+    border:none;
+    padding:8px 10px;
+    color:white;
+    border-radius: 5px;
+    background-color: #18f373;
+}
+
+.main .content .body .body-content .reporting-content .specific-time button:hover {
+    cursor: pointer;
+    transition: 0.5s all ease;
+    background-color: #1cda6b;
+}
+
+.main .content .body .body-content .reporting-current {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding:10px 20px;
+    color:#313A46;
+}
+
+.main .content .body .body-content .reporting-current .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.main .content .body .body-content .reporting-current .report-current-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Table */
+.main .content .body .body-content .order-list table {
+    width:100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* .main .content .body .body-content .second table tr {
+    display: flex;
+    align-items: center;
+} */
+
+.main .content .body .body-content .order-list table tr th {
+    text-align: center;
+    padding:15px 0;
+    background-color: #EFF2F7;
+}
+
+.main .content .body .body-content .order-list table tr th:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.main .content .body .body-content .order-list table tr th:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main .content .body .body-content .order-list table tr td {
+    text-align: center;
+    padding:15px;
+}
+
+/* .main .content .body .body-content .order-list table tr td:nth-child(1){
+    padding:0;
+} */
+
+
+.main .content .body .body-content .order-list table tr th:last-child{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.main .content .body .body-content .order-list table tr td .order-id {
+    color:#90979E;
+}
+
+.main .content .body .body-content .order-list table tr td .customer-name {
+    color:#90979E;
+}
+
+.main .content .body .body-content .order-list table tr td .total-amount {
+    color:#90979E;
+}
+
+.main .content .body .body-content .order-list table tr td .given-money {
+    color:#90979E;
+}
+
+.main .content .body .body-content .order-list table tr td .paid-back {
+    color:#90979E;
+}
+
+.main .content .body .body-content .order-list table tr td .date {
+    color:#90979E;
+}
+
+.main .content .body .body-content .order-list table tr td .quantities {
+    color:#90979E;
+}
+
+
+.main .content .body .body-content .order-list table tr td .view-detail {
+    border-radius: 5px;
+    color:white;
+    border:none;
+    background-color: rgb(12, 113, 230);
+    padding:4px 15px;
+    outline: none;
+}
+
+.main .content .body .body-content .order-list table tr td .view-detail:hover{
+    background-color: rgb(30, 108, 198);
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+.main .content .body .body-content .body-content .second table tr td .action{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#90979E;
+}
+/* End Reporting */

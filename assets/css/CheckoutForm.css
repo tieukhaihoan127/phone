@@ -1,0 +1,76 @@
+/* Checkout Form */
+.main .content .body {
+    margin-top: 10%;
+}
+
+.main .content .body .checkout-content{
+    background-color: #FFFFFF;
+    padding:20px 30px;
+    border-radius: 5px;
+    display:block;
+    text-align: center;
+    margin:0 auto;
+    width:40%;
+}
+
+.main .content .body .checkout-content.dark{
+    background-color: #3A434E; 
+    transition: 0.2s all ease;
+}
+
+.main .content .body .checkout-content .checkout-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .body .checkout-content .checkout-form .logo {
+    border-radius: 100%;
+    padding:20px;
+    display: flex;
+    height:90px;
+    width:90px;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF2F7;
+}
+
+.main .content .body .checkout-content .checkout-form .logo img {
+    object-fit: cover;
+    width:80px;
+}
+
+.main .content .body .checkout-content .checkout-form .title{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.main .content .body .checkout-content .checkout-form .phone-input .sdt{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main .content .body .checkout-content .checkout-form .phone-input input{
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #313A46;
+    padding:0 5px;
+}
+
+.main .content .body .checkout-content .checkout-form .submit-phone {
+    padding:10px 20px;
+    border:none;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: #18f373;
+    color:white;
+}
+
+.main .content .body .checkout-content .checkout-form .submit-phone:hover{
+    background-color: #1cda6b;
+    transition: 0.5s all ease;
+}
+/* End Checkout Form */

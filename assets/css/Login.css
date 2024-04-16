@@ -1,0 +1,104 @@
+.login {
+    margin:0 auto;
+    display: block;
+    background-color: #FFFFFF;
+    width:40%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.login .container {
+    padding:0;
+}
+
+.login .first-content {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #008C91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login .first-content .image {
+    width:100px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    background-color: #313A46;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.login .first-content .image img {
+    width:80px;
+    object-fit: cover;
+}
+
+.login .first-content .title {
+    margin-top: 15px;
+    color:white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login form {
+    padding:55px;
+    text-align: center;
+}
+
+.login form input[name="username"] {
+    border-radius: 50px;
+    outline:none;
+    padding:10px;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.login form input[name="password"] {
+    border-radius: 50px;
+    outline:none;
+    padding:10px;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.login form input[name="re-password"] {
+    border-radius: 50px;
+    outline:none;
+    padding:10px;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.login form .func {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.login form .func .remember {
+    width:50%;
+    color:#313A46;
+    text-align: left;
+}
+
+.login form .func .forget:hover{
+    color:#151617;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+.login form button {
+    text-align: center;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    border-radius: 50px;
+    background-color: #008C91;
+    width:20%;
+    margin-top: 10px;
+}

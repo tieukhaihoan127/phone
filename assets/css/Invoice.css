@@ -158,3 +158,73 @@
     font-weight: bold;
 }
 /* End Invoice */
+
+/* Resonsive  */
+@media all and (max-width:767.98px){
+    .main .content .body .invoice-content .invoice-table table tr td .product .product-name {
+        font-size: 14px;
+    }
+
+    .main .content .body .invoice-content .invoice-table table tr td .price{
+        font-size: 14px;
+    }
+
+    .main .content .body .invoice-content .invoice-table table tr td .quantity{
+        font-size: 14px;
+    }
+
+    .main .content .body .invoice-content .invoice-table table tr td .total{
+        font-size: 14px;
+    }
+
+    .main .content .body .invoice-content .second .left .bill {
+        font-size: 17px;
+    }
+
+    .main .content .body .invoice-content .second .left .name {
+        font-size: 17px;
+    }
+
+    .main .content .body .invoice-content .second .left .address {
+        font-size: 15px;
+    }
+
+    .main .content .body .invoice-content .second .left .phone {
+        font-size: 15px;
+    }
+
+    .main .content .body .invoice-content .second .right .order-id{
+        font-size: 17px;
+    }
+
+    .main .content .body .invoice-content .second .right .id {
+        font-size: 15px;
+    }
+
+    .main .content .body .invoice-content .second .right .employee-name {
+        font-size: 17px;
+    }
+
+    .main .content .body .invoice-content .second .right .e-name{
+        font-size: 15px;
+    }
+
+    .main .content .body .invoice-content .second .right .invoice-date{
+        font-size: 17px;
+    }
+
+    .main .content .body .invoice-content .second .right .date {
+        font-size: 15px;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+}
+@media (max-width:575.98px){
+    .container {
+        max-width: calc(100% - 30px);
+    }
+}
+
+/* End Responsive */

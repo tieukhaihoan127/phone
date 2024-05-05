@@ -10,7 +10,7 @@
     display:block;
     text-align: center;
     margin:0 auto;
-    width:40%;
+    width:50%;
 }
 
 .main .content .body .register-customer.dark{
@@ -51,8 +51,11 @@
     margin-bottom:30px ;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+}
+
+.main .content .body .register-customer .register-form .first .fullname-input {
+    width:40%;
 }
 
 .main .content .body .register-customer .register-form .first .fullname-input .fullname{
@@ -65,10 +68,11 @@
     outline: none;
     border: 1px solid #313A46;
     padding:0 5px;
+    width:100%;
 }
 
 .main .content .body .register-customer .register-form .first .phone-input{
-    margin-left: 33px;
+    width:40%;
 }
 
 .main .content .body .register-customer .register-form .first .phone-input .phone{
@@ -81,6 +85,7 @@
     outline: none;
     border: 1px solid #313A46;
     padding:0 5px;
+    width:100%;
 }
 
 .main .content .body .register-customer .register-form .second {

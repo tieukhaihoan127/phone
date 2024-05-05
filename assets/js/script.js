@@ -1,6 +1,6 @@
 // Admin Info
-const adminInfo = document.querySelector(".content .header .admin");
-const adminMenuInfo = document.querySelector(".content .admin-menu");
+const adminInfo = document.querySelector(".content .header .information .admin");
+const adminMenuInfo = document.querySelector(".content .header .information .admin-menu");
 
 adminInfo.addEventListener("mouseenter",() => {
     const infoChangeName = adminInfo.querySelector(".admin-info .admin-name");
@@ -18,7 +18,7 @@ adminInfo.addEventListener("mouseleave",() => {
 });
 
 adminInfo.addEventListener("click", () => {
-    if(adminMenuInfo){
+    if(adminMenuInfo.classList.contains("show") == false){
         adminMenuInfo.classList.add("show");
     }
     else{
@@ -30,6 +30,20 @@ adminMenuInfo.addEventListener("mouseleave",() => {
     adminMenuInfo.classList.remove("show");
 });
 // End Admin Info
+const siderInfoBar = document.querySelector(".content .header .header-content .current-content-smaller .web-info .navbar");
+const siderInfo = document.querySelector(".content .header .header-content .current-content-smaller .sider-info");
+
+siderInfoBar.addEventListener("click", () => {
+    if(siderInfo.classList.contains("show") == false){
+        siderInfo.classList.add("show");
+    }
+    else {
+        siderInfo.classList.remove("show");
+    }
+});
+// Sider Info
+
+// End Sider Info
 
 // Change Background Color
 const bgIcon = document.querySelector(".content .header .header-content .menu-content .menu .icon-bg");

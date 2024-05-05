@@ -58,7 +58,7 @@
     font-size: 18px;
     font-weight: 500;
     color: #313A46;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
@@ -212,3 +212,73 @@
     color:#90979E;
 }
 /* End Order List */
+
+/* Resonsive  */
+@media all and (max-width:1199.98px){
+    .main .content .body .order-list table tr th{
+        font-size: 14px;
+    }
+
+    .main .content .body .order-list table tr th:nth-child(6){
+        display: none;
+    }
+
+    .main .content .body .order-list table tr td:nth-child(6){
+        display: none;
+    }
+}
+
+@media all and (max-width:991.98px){
+    .main .content .body .order-list table tr th:nth-child(4){
+        display: none;
+    }
+
+    .main .content .body .order-list table tr td:nth-child(4){
+        display: none;
+    }
+}
+@media all and (max-width:767.98px){
+    .main .content .body .order-list table tr th:nth-child(3){
+        display: none;
+    }
+
+    .main .content .body .order-list table tr td:nth-child(3){
+        display: none;
+    }
+}
+@media (max-width:575.98px){
+    .main .content .body .order-list table tr th:last-child {
+        padding-right:20px;
+    }
+
+    .main .content .body .order-list table tr td:last-child{
+        padding-right:15px;
+    }
+
+    .main .content .body .order-list table tr th:nth-child(1) {
+        padding-left:0;
+    }
+
+    .main .content .body .order-list table tr th{
+        font-size: 12px;
+    }
+
+    .main .content .body .order-list table tr td:nth-child(1) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main .content .body .order-list table tr td .order-id {
+        font-size: 12px;
+    }
+
+    .main .content .body .order-list table tr td .total-amount {
+        font-size: 12px;
+    }
+
+    .main .content .body .order-list table tr td .date {
+        font-size: 12px;
+    }
+}
+
+/* End Responsive */

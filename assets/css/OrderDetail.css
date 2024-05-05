@@ -259,6 +259,118 @@
 }
 
 /* End Order Desc */
-
-
 /* End Order Detail */
+
+
+/* Responsive */
+@media all and (max-width:1285.60px){
+    .main .content .body .order-detail .order-first .order-info {
+        width:43%;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info {
+        width:43%;
+    }
+}
+
+@media all and (max-width:1199.98px){
+    .main .content .body .order-detail .order-first .order-info {
+        width:42%;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info {
+        width:42%;
+    }
+}
+
+@media all and (max-width:991.98px){
+    .main .content .body .order-detail .order-first .order-info {
+        width:40%;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info {
+        width:40%;
+    }
+
+    .main .content .body .order-detail .order-first .order-info .detail-table table tr td {
+        font-size: 13px;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td {
+        font-size: 13px;
+    }
+
+    .main .content .body .order-detail .order-first .order-info .detail-table table tr th {
+        font-size: 14px;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr th {
+        font-size: 14px;
+    }
+
+    .main .content .body .order-detail .order-first .order-info .detail-table table tr th:last-child {
+        padding-right: 20px;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr th:last-child {
+        padding-right: 20px;
+    }
+
+    .main .content .body .order-detail .order-desc .order-detail-items .order-table table tr th{
+        font-size: 14px;
+    }
+
+    .main .content .body .order-detail .order-desc .order-detail-items .order-table table tr td{
+        font-size: 13px;
+    }
+}
+@media all and (max-width:767.98px){
+    .main .content .body .order-detail .order-first {
+        flex-wrap: wrap;
+    }
+
+    .main .content .body .order-detail .order-first .order-info {
+        width:100%;
+        margin-bottom: 10px;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info {
+        width:100%;
+    }
+}
+
+@media (max-width:575.98px){
+    .main .content .body .order-detail .order-desc .order-detail-items .order-table table tr th {
+        font-size: 12px;
+    }
+
+    .main .content .body .order-detail .order-desc .order-detail-items .order-table table tr td {
+        font-size: 11px;
+    }
+
+    .main .content .body .order-detail .order-desc .order-detail-items .order-table table tr th:last-child {
+        padding-left: 0;
+    }
+
+    .main .content .body .order-detail .order-desc .order-detail-items .order-table table tr td:last-child {
+        padding-left: 0;
+    }
+
+    .main .content .body .order-detail .order-first .order-info .detail-table table tr td {
+        font-size: 11px;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td {
+        font-size: 11px;
+    }
+
+    .main .content .body .order-detail .order-first .order-info .detail-table table tr th {
+        font-size: 12px;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr th {
+        font-size: 12px;
+    }
+}
+
+/* End Responsive */

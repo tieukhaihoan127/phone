@@ -172,3 +172,116 @@
     color:#90979E;
 }
 /* End Reporting */
+
+/* Responsive */
+@media all and (max-width:1199.98px){
+    .main .content .body .body-content .order-list table tr th {
+        font-size: 14px;
+    }
+
+    .main .content .body .body-content .reporting-current .report-current-content .total{
+        font-size: 13px;
+    }
+
+    .main .content .body .body-content .reporting-current .report-current-content .number-orders {
+        font-size: 13px;
+    }
+
+    .main .content .body .body-content .reporting-current .report-current-content .number-products {
+        font-size: 13px;
+    }
+    
+} 
+@media all and (max-width:991.98px){
+    .main .content .body .body-content .order-list table tr th:nth-child(5) {
+        display: none;
+    }
+
+    .main .content .body .body-content .order-list table tr td:nth-child(5) {
+        display: none;
+    }
+
+    .main .content .body .body-content .order-list table tr th:last-child {
+        padding-right: 20px;
+    }
+    .main .content .body .body-content .order-list table tr td .total-amount {
+        font-size: 14px;
+    }
+
+    .main .content .body .body-content .order-list table tr td .customer-name{
+        font-size: 14px;
+    }
+
+    .main .content .body .body-content .order-list table tr td .order-id {
+        font-size: 14px;
+    }
+
+    .main .content .body .body-content .order-list table tr td .date {
+        font-size: 14px;
+    }
+
+    .main .content .body .body-content .reporting-content {
+        flex-wrap: wrap;
+    }
+
+    .main .content .body .body-content .reporting-current .report-current-content {
+        flex-wrap: wrap;
+    }
+}
+@media all and (max-width:767.98px){
+    .main .content .body .body-content .order-list table tr th:nth-child(4) {
+        display: none;
+    }
+
+    .main .content .body .body-content .order-list table tr td:nth-child(4) {
+        display: none;
+    }
+
+    .main .content .body .body-content .reporting-content .specific-time {
+        margin-top: 10px;
+    }
+
+    .main .content .body .body-content .reporting-content .specific-time div:first-child{
+        margin-right: 15px;
+    }
+
+    .main .content .body .body-content .reporting-current .report-current-content .total {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:575.98px){
+    .main .content .body .body-content .order-list table tr th:nth-child(3) {
+        display: none;
+    }
+
+    .main .content .body .body-content .order-list table tr td:nth-child(3) {
+        display: none;
+    }
+
+    .main .content .body .body-content .reporting-content .specific-time {
+        flex-wrap: wrap;
+    }
+
+    .main .content .body .body-content .reporting-content .specific-time div:nth-child(3){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .main .content .body .body-content .reporting-content .specific-time input{
+        margin-right: 0;
+    }
+
+
+    .main .content .body .body-content .reporting-content .specific-time button{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:501px){
+    .main .content .body .body-content .reporting-content .specific-time button{
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+/* End Responsive */

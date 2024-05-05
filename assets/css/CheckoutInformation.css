@@ -143,6 +143,7 @@
 .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td {
     text-align: center;
     padding:15px;
+    width:50%;
 }
 
 .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td:nth-child(1){
@@ -312,3 +313,105 @@
 }
 
 /* End Order Detail */
+
+/* Responsive */
+@media all and (max-width:1285.60px){
+    .main .content .body .order-detail .order-first .order-info {
+        width:43%;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info {
+        width:43%;
+    }
+
+    .main .content .body .order-detail .order-second .order-customer-info {
+        width:43%;
+    }
+
+    .main .content .body .order-detail .order-second .order-function {
+        width:43%;
+    }
+
+    .main .content .body .order-detail .order-second .order-function .detail-function .note textarea {
+        width:100%;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td {
+        width:50%;
+    }
+}
+
+@media all and (max-width:1199.98px){
+    .main .content .body .order-detail .order-first .order-info {
+        width:42%;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info {
+        width:42%;
+    }
+
+    .main .content .body .order-detail .order-second .order-customer-info {
+        width:42%;
+    }
+
+    .main .content .body .order-detail .order-second .order-function {
+        width:42%;
+    }
+
+    .main .content .body .order-detail .order-second .order-customer-info .detail-customer .first {
+        flex-wrap: wrap;
+    }
+
+    .main .content .body .order-detail .order-second .order-customer-info .detail-customer .first .phone-input {
+        width:100%;
+    }
+
+    .main .content .body .order-detail .order-second .order-customer-info .detail-customer .first .fullname-input {
+        width:100%;
+        margin-top: 20px;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td .price input[name="given-price"] {
+        width:50%;
+    }
+}
+
+@media all and (max-width:991.98px){
+    .main .content .body .order-detail .order-first .order-info {
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info {
+        width:100%;
+    }
+
+    .main .content .body .order-detail .order-second .order-customer-info {
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    .main .content .body .order-detail .order-second .order-function {
+        width:100%;
+    }
+
+    .main .content .body .order-detail .order-first {
+        flex-wrap: wrap;
+    }
+
+    .main .content .body .order-detail .order-second {
+        flex-wrap : wrap;
+    }
+
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td .price input[name="given-price"] {
+        width:35%;
+    }
+}
+
+@media (max-width:450px){
+    .main .content .body .order-detail .order-first .order-detail-info .detail-table table tr td .price input[name="given-price"] {
+        width:60%;
+    }
+}
+
+/* End Responsive */

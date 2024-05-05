@@ -56,6 +56,7 @@
 .main .content .body .add-product .content form .first {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .main .content .body .add-product .content form .first label {
@@ -76,7 +77,7 @@
 }
 
 .main .content .body .add-product .content form .second .import-input {
-    width:45%;
+    width:56%;
 }
 
 .main .content .body .add-product .content form .second .import-input label{
@@ -87,11 +88,10 @@
     border-radius: 50px;
     margin-top: 5px;
     outline:none;
-    width:100%;
 }
 
 .main .content .body .add-product .content form .second .retail-input {
-    width:45%;
+    width:44%;
 }
 
 .main .content .body .add-product .content form .second .retail-input label{
@@ -102,7 +102,6 @@
     border-radius: 50px;
     margin-top: 5px;
     outline:none;
-    width:100%;
 }
 
 .main .content .body .add-product .content form .third {
@@ -112,7 +111,7 @@
 }
 
 .main .content .body .add-product .content form .third .category-input {
-    width:45%;
+    width:40%;
 }
 
 .main .content .body .add-product .content form .third .category-input label{
@@ -126,9 +125,6 @@
     width:100%;
 }
 
-.main .content .body .add-product .content form .third .email-input {
-    width:45%;
-}
 
 .main .content .body .add-product .content form .third .email-input label{
     color: #313A46;
@@ -142,9 +138,12 @@
 }
 
 .main .content .body .add-product .content form .third .left-input {
-    width:45%;
     display: flex;
     align-items: center;
+}
+
+.main .content .body .add-product .content form .third .left-input .dob{
+    width:57%;
 }
 
 .main .content .body .add-product .content form .third .left-input .dob label {
@@ -156,6 +155,10 @@
     margin-top: 5px;
     outline:none;
     width:85%;
+}
+
+.main .content .body .add-product .content form .third .left-input .gender{
+    width:27%;
 }
 
 .main .content .body .add-product .content form .third .left-input .gender label {
@@ -173,12 +176,8 @@
     border-radius: 50px;
     margin-top: 5px;
     outline:none;
-    width:98%;
+    width:100%;
     padding:2px 0;
-}
-
-.main .content .body .add-product .content form .third .stock-input {
-    width:45%;
 }
 
 .main .content .body .add-product .content form .third .stock-input label{
@@ -189,7 +188,6 @@
     border-radius: 50px;
     margin-top: 5px;
     outline:none;
-    width:100%;
 }
 
 .main .content .body .add-product .content form .fourth {
@@ -258,7 +256,7 @@
 }
 
 .main .content .body .add-product .content form .fifth .barcode-input {
-    width:45%;
+    width:40%;
 }
 
 .main .content .body .add-product .content form .fifth .barcode-input label{
@@ -269,11 +267,11 @@
     border-radius: 50px;
     margin-top: 5px;
     outline:none;
-    width:100%;
+    width: 100%;
 }
 
 .main .content .body .add-product .content form .fifth .date-input {
-    width:45%;
+    width:47%;
 }
 
 .main .content .body .add-product .content form .fifth .date-input label{
@@ -284,7 +282,7 @@
     border-radius: 50px;
     margin-top: 5px;
     outline:none;
-    width:100%;
+    width: 100%;
 }
 
 
@@ -315,12 +313,33 @@
 }
 
 @media (max-width:575.98px){
-    .main .content .body .add-product .content form .product-title {
-        font-size: 18px;
+    .main .content .body .add-product .content form .fifth {
+        flex-wrap: wrap;
+    }
+
+    .main .content .body .add-product .content form .fifth .date-input{
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    .main .content .body .add-product .content form .fifth .barcode-input{
+        width:100%;
+    }
+
+    .main .content .body .add-product .content form .third .left-input .gender {
+        width:28%;
     }
 
     .main .content .body .add-product {
-        width:83%;
+        width:85%;
+    }
+
+    .main .content .body .add-product .content form .third .left-input .dob{
+        width:60%;
+    }
+
+    .main .content .body .add-product .content form .third .left-input .gender {
+        width:30%;
     }
 }
 /* End Responsive */

@@ -345,6 +345,72 @@
 }
 
 /* End Product Detail */
-
-
 /* End Product Management */
+
+/* Responsive */
+@media all and (max-width:1199.98px){
+    .main .content .body .body-content .second table tr th:nth-child(6){
+        display: none;
+    }
+
+    .main .content .body .body-content .second table tr td:nth-child(6){
+        display: none;
+    }
+}
+
+@media all and (max-width:991.98px){
+    .main .content .body .body-content .second table tr th{
+        font-size: 14px;
+    }
+
+    .main .content .body .body-content .second table tr th:nth-child(3){
+        display: none;
+    }
+
+    .main .content .body .body-content .second table tr td:nth-child(3){
+        display: none;
+    }
+}
+@media all and (max-width:767.98px){
+    .main .content .body .body-content .second table tr th:nth-child(1){
+        display: none;
+    }
+
+    .main .content .body .body-content .second table tr td:nth-child(1){
+        display: none;
+    }
+}
+@media (max-width:575.98px){
+    .main .content .body .body-content .second table tr td .product-name img {
+        width:30px;
+        height:30px;
+    }
+    .main .content .body .body-content .second table tr th{
+        font-size: 13px;
+    }
+    .main .content .body .body-content .second table tr td .product-name .product-info .name {
+        font-size: 13px;
+    }
+    .main .content .body .body-content .second table tr td .product-name .product-info .stock{
+        font-size: 10px;
+    }
+    .main .content .body .body-content .second table tr td .retail-price{
+        font-size: 13px;
+    }
+    .main .content .body .body-content .second table tr td .category {
+        font-size: 13px;
+    }
+    .main .content .body .body-content .first{
+        flex-wrap: wrap;
+    }
+    .main .content .body .body-content .second table tr td:last-child{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:509px){
+    .main .content .body .body-content .first .add-account {
+        margin-bottom: 10px;
+    }
+}
+/* End Responsive */

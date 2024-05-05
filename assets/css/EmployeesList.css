@@ -108,6 +108,12 @@
     background-color: #EFF2F7;
 }
 
+.main .content .body .body-content .second table tr th:hover {
+    background-color: #91969e;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
 .main .content .body .body-content .second table tr th:nth-child(1){
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -127,19 +133,6 @@
     text-align: center;
     padding:15px;
 }
-
-/* .main .content .body .body-content .second table tr td:nth-child(1){
-    padding:0;
-}
-
-.main .content .body .body-content .second table tr td:last-child{
-    padding-right:0 ;
-}
-
-.main .content .body .body-content .second table tr th:last-child{
-    text-align: center;
-    padding-left: 20px;
-} */
 
 .main .content .body .body-content .second table tr td .employee {
     display: flex;
@@ -177,6 +170,7 @@
 .main .content .body .body-content .second table tr td .status:hover{
     background-color: #1cda6b;
     transition: 0.5s all ease;
+    cursor: pointer;
 
 }
 
@@ -363,3 +357,62 @@
 /* End Account Update */
 
 /* End Account Management */
+
+/* Resonsive  */
+@media all and (max-width:1199.98px){
+    .main .content .body .body-content .second table tr th {
+        font-size: 14px;
+    }
+
+    .main .content .body .body-content .second table tr td {
+        font-size: 13px;
+    }
+
+    .main .content .body .body-content .second table tr th:nth-child(1) {
+        padding-left: 15px;
+    }
+}
+
+@media all and (max-width:991.98px){
+    .main .content .body .body-content .second table tr th:nth-child(4) {
+        display: none;
+    }
+
+    .main .content .body .body-content .second table tr td:nth-child(4) {
+        display: none;
+    }
+}
+@media all and (max-width:767.98px){
+    .container {
+        max-width: 720px;
+    }
+
+    .main .content .body .body-content .second table tr th:nth-child(3) {
+        display: none;
+    }
+
+    .main .content .body .body-content .second table tr td:nth-child(3) {
+        display: none;
+    }
+}
+@media (max-width:575.98px){
+    .main .content .body .body-content .first {
+        flex-wrap: wrap;
+    }
+
+    .main .content .body .body-content .second table tr th:nth-child(5) {
+        display: none;
+    }
+
+    .main .content .body .body-content .second table tr td:nth-child(5) {
+        display: none;
+    }
+
+    @media (max-width:509px){
+        .main .content .body .body-content .first .add-account {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* End Responsive */

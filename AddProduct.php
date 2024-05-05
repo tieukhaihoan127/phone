@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/AddProduct.css">
     <link rel="stylesheet" href="./assets/css/AdminDashboard.css">
-    <title>Update Product</title>
+    <title>Add Product</title>
 </head>
 <body>
     <div class="main">
@@ -70,72 +70,75 @@
                     </ul>
                 </div>
         </div>
-        <!-- <div class="subsider col-xl-1 col-lg-1">
-            <div class="sticky-top">
-                <div class="logo d-flex justify-content-center">
-                    <img src="./assets/images/logo-sm.png" alt="Website Icon">
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-solid fa-users"></i>
-                                </span>
-                                <div class="text d-none">
-                                    Account Management
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-brands fa-product-hunt"></i>
-                                </span>
-                                <div class="text d-none">
-                                    Product Management
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-solid fa-circle-user"></i>
-                                </span>
-                                <div class="text d-none">
-                                    Customer Management
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-solid fa-coins"></i>
-                                </span>
-                                <div class="text d-none">
-                                    Transaction Processing
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                </span>
-                                <div class="text d-none">
-                                    Reporting and Analytics
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
         <div class="content right">
             <div class="header">
                 <div class="header-content">
                     <div class="current-content">
-                        Update Product
+                        Add Employee
+                    </div>
+                    <div class="current-content-smaller">
+                        <div class="web-info">
+                            <div class="logo-img">
+                                <img src="./assets/images/small-icon.png" alt="">
+                            </div>
+                            <div class="navbar">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                        <div class="sider-info">
+                            <ul>
+                                <li>
+                                    <div class="menu-item">
+                                        <span class="icon-sider">
+                                            <i class="fa-solid fa-users"></i>
+                                        </span>
+                                        <div class="text">
+                                            Account Management
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-item">
+                                        <span class="icon-sider">
+                                            <i class="fa-brands fa-product-hunt"></i>
+                                        </span>
+                                        <div class="text">
+                                            Product Management
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-item">
+                                        <span class="icon-sider">
+                                            <i class="fa-solid fa-circle-user"></i>
+                                        </span>
+                                        <div class="text">
+                                            Customer Management
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-item">
+                                        <span class="icon-sider">
+                                            <i class="fa-solid fa-coins"></i>
+                                        </span>
+                                        <div class="text">
+                                            Transaction Processing
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-item">
+                                        <span class="icon-sider">
+                                            <i class="fa-solid fa-chart-simple"></i>
+                                        </span>
+                                        <div class="text">
+                                            Reporting and Analytics
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="menu-content">
                         <div class="menu">
@@ -149,58 +152,60 @@
                                 </div>
                             </span>
                         </div>
-                        <div class="admin">
-                            <div class="image">
-                                <img src="./assets/images/avatar.jpg" alt="Admin Icon">
-                            </div>
-                            <div class="admin-info">
-                                <div class="admin-name">
-                                    Tieu Khai Hoan
+                        <div class="information">
+                            <div class="admin">
+                                <div class="image">
+                                    <img src="./assets/images/avatar.jpg" alt="Admin Icon">
                                 </div>
-                                <div class="role">
-                                    Admin
+                                <div class="admin-info">
+                                    <div class="admin-name">
+                                        Tieu Khai Hoan
+                                    </div>
+                                    <div class="role">
+                                        Admin
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="admin-menu">
+                                <div class="menu-desc">
+                                    Welcome !
+                                </div>
+                                <div class="menu-info">
+                                    <ul>
+                                        <li>
+                                            <div class="menu-item">
+                                                <span class="icon-sider">
+                                                    <i class="fa-solid fa-user"></i>
+                                                </span>
+                                                <div class="text">
+                                                    My Account
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="menu-item">
+                                                <span class="icon-sider">
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </span>
+                                                <div class="text">
+                                                    Password
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="menu-item">
+                                                <span class="icon-sider">
+                                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                                </span>
+                                                <div class="text">
+                                                    Logout
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="admin-menu">
-                    <div class="menu-desc">
-                        Welcome !
-                    </div>
-                    <div class="menu-info">
-                        <ul>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-user"></i>
-                                    </span>
-                                    <div class="text">
-                                        My Account
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-gear"></i>
-                                    </span>
-                                    <div class="text">
-                                        Password
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-right-from-bracket"></i>
-                                    </span>
-                                    <div class="text">
-                                        Logout
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -212,7 +217,7 @@
                                 <img src="./assets/images/logobig.png" alt="">
                             </div>
                             <div class="title">
-                                Update Product
+                                Add Product
                             </div>
                             <form action="">
                                 <div class="first">
@@ -248,7 +253,7 @@
                                         <img src="./assets/images/avatar.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="submit-product" type="submit">Update</div>
+                                <div class="submit-product" type="submit">Add</div>
                             </form>
                         </div>
                     </div>

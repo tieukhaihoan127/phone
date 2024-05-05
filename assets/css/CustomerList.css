@@ -56,6 +56,7 @@
 .main .content .body .customer-list table tr th:last-child{
     text-align: center;
     padding-left: 20px;
+    padding-right:20px;
 }
 
 .main .content .body .customer-list table tr td .customer {
@@ -97,6 +98,7 @@
 }
 
 .main .content .body .customer-list table tr td .purchase-history:hover{
+    cursor: pointer;
     background-color: rgb(30, 108, 198);
     transition: 0.5s all ease;
 }
@@ -118,3 +120,38 @@
 }
 /* End Table */
 /* End Customer List */
+
+/* Responsive */
+@media all and (max-width:991.98px){
+    .main .content .body .customer-list table tr th {
+        font-size: 14px;
+    }
+
+    .main .content .body .customer-list table tr td .customer .name {
+        font-size: 14px;
+        text-align: left;
+    }
+    .main .content .body .customer-list table tr td .phone{
+        font-size: 14px;
+    }
+    .main .content .body .customer-list table tr td .address{
+        font-size: 14px;
+    }
+}
+@media all and (max-width:767.98px){
+    .main .content .body .customer-list table tr td:nth-child(3){
+        display:none;
+    }
+    .main .content .body .customer-list table tr th:nth-child(3){
+        display:none;
+    }
+}
+@media (max-width:575.98px){
+    .main .content .body .customer-list table tr td:nth-child(2){
+        display:none;
+    }
+    .main .content .body .customer-list table tr th:nth-child(2){
+        display:none;
+    }
+}
+/* End Responsive */

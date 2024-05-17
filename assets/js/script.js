@@ -200,3 +200,184 @@ bgIcon.addEventListener("click",() => {
     }
 });
 // End Change Background Color
+
+const checkOK = window.location.search;
+const urlParamsCheckOK = new URLSearchParams(checkOK);
+
+function removeURLParameter(paramKey) {
+    let url = new URL(window.location.href);
+    let params = new URLSearchParams(url.search);
+    params.delete(paramKey);
+    window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`);
+}
+
+if(urlParamsCheckOK.has('successMessage')) {
+    alert('Đổi mật khẩu thành công !');
+    removeURLParameter('successMessage');
+
+}
+
+// Redirect 
+const local = "http://localhost:8080/FinalWeb/";
+
+const dataCheck = async () => {
+    const checkType = await fetch("http://localhost:8080/FinalWeb/api/AccountManagement/get-account-type.php");
+    const dataCheck = await checkType.json();
+    return dataCheck;
+}
+
+dataCheck().then(data => {
+    const type = parseInt(data.data[0].AccountType);
+    const sidebarMenu = document.querySelector(".main .sider .menu ul");
+    let value = "";
+    
+    if(type == 1) {
+        value = `
+                <li>
+                    <div class="menu-item">
+                        <span class="icon-sider">
+                            <i class="fa-brands fa-product-hunt"></i>
+                        </span>
+                        <div class="text">
+                            Product Management
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="icon-sider">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </span>
+                        <div class="text">
+                            Customer Management
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="icon-sider">
+                            <i class="fa-solid fa-coins"></i>
+                        </span>
+                        <div class="text">
+                            Transaction Processing
+                        </div>
+                    </div>
+                </li>`;
+        sidebarMenu.insertAdjacentHTML("beforeend", value);
+        const siderMenu = document.querySelectorAll(".main .sider .menu ul li");
+        siderMenu[0].addEventListener("click", async () => {
+            window.location.href = "http://localhost:8080/FinalWeb/ProductsList.php";
+        });
+
+        siderMenu[1].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/CustomerList.php";
+        });
+
+        siderMenu[2].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/CheckoutOrderList.php";
+        });
+    }
+    else {
+        value = `<li>
+                    <div class="menu-item">
+                        <span class="icon-sider">
+                            <i class="fa-solid fa-users"></i>
+                        </span>
+                        <div class="text">
+                            Account Management
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="icon-sider">
+                            <i class="fa-brands fa-product-hunt"></i>
+                        </span>
+                        <div class="text">
+                            Product Management
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="icon-sider">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </span>
+                        <div class="text">
+                            Customer Management
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="icon-sider">
+                            <i class="fa-solid fa-coins"></i>
+                        </span>
+                        <div class="text">
+                            Transaction Processing
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="icon-sider">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </span>
+                        <div class="text">
+                            Reporting and Analytics
+                        </div>
+                    </div>
+                </li>`;
+        sidebarMenu.insertAdjacentHTML("beforeend", value);
+        const siderMenu = document.querySelectorAll(".main .sider .menu ul li");
+        siderMenu[0].addEventListener("click", async () => {
+            window.location.href = "http://localhost:8080/FinalWeb/EmployeesList.php";
+        });
+
+        siderMenu[1].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/ProductsList.php";
+        });
+
+        siderMenu[2].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/CustomerList.php";
+        });
+
+        siderMenu[3].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/CheckoutOrderList.php"
+        });
+
+        siderMenu[4].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/Reporting.php";
+        });
+    }
+});
+
+// End Redirect
+
+// Change Password
+const changePassword = document.querySelector(".main .content .header .information .admin-menu .menu-info ul li:nth-child(2) .menu-item");
+if(changePassword) {
+    changePassword.addEventListener("click", () => {
+        window.location.href = local + "ChangePassword.php";
+    });
+}
+// End Change Password
+
+// View Personal Information
+const viewElement = document.querySelector(".main .content .header .information .admin-menu .menu-info ul li .menu-item");
+if(viewElement) {
+    viewElement.addEventListener("click", () => {
+        const viewLink = local + "UpdateEmployee.php"; 
+        window.location.href = viewLink;
+    });
+}
+// End View Personal Information
+
+// Logout
+const logout = document.querySelector(".main .content .header .information .admin-menu .menu-info ul li:nth-child(3) .menu-item");
+if(logout) {
+    logout.addEventListener("click",() => {
+        window.location.href = "http://localhost:8080/FinalWeb/api/logout.php";
+    });
+}
+// End Logout

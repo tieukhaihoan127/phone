@@ -204,7 +204,7 @@
     margin-right: 15px;
 }
 
-.main .content .body .add-product .content form .fourth .picture button {
+.main .content .body .add-product .content form .fourth .picture .choose-pic {
     outline: none;
     border: none;
     padding: 5px 10px;
@@ -214,7 +214,7 @@
     font-size: 11px;
 }
 
-.main .content .body .add-product .content form .fourth .picture button:hover {
+.main .content .body .add-product .content form .fourth .picture .choose-pic:hover {
     cursor: pointer;
     background-color: #6973E3;
     transition: 0.5s all ease;

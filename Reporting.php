@@ -19,56 +19,7 @@
             </a>
             <div class="menu">
                 <ul>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-users"></i>
-                            </span>
-                            <div class="text">
-                                Account Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-brands fa-product-hunt"></i>
-                            </span>
-                            <div class="text">
-                                Product Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </span>
-                            <div class="text">
-                                Customer Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-coins"></i>
-                            </span>
-                            <div class="text">
-                                Transaction Processing
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-chart-simple"></i>
-                            </span>
-                            <div class="text">
-                                Reporting and Analytics
-                            </div>
-                        </div>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -89,56 +40,7 @@
                         </div>
                         <div class="sider-info">
                             <ul>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-users"></i>
-                                        </span>
-                                        <div class="text">
-                                            Account Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-brands fa-product-hunt"></i>
-                                        </span>
-                                        <div class="text">
-                                            Product Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-circle-user"></i>
-                                        </span>
-                                        <div class="text">
-                                            Customer Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-coins"></i>
-                                        </span>
-                                        <div class="text">
-                                            Transaction Processing
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-chart-simple"></i>
-                                        </span>
-                                        <div class="text">
-                                            Reporting and Analytics
-                                        </div>
-                                    </div>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -218,17 +120,19 @@
                             <div class="search-time">
                                 <label for="time">Filter :</label>
                                 <select name="" id="time">
+                                    <option value="" selected disabled>--- Chọn dịch vụ ---</option>
                                     <option value="today">Today</option>
                                     <option value="yesterday">Yesterday</option>
-                                    <option value="7-days">The last 7 days</option>
+                                    <option value="week">The last 7 days</option>
                                     <option value="month">This month</option>
+                                    <option value="all">All</option>
                                 </select>
                             </div>
                             <div class="specific-time">
                                 <div class="from">From</div>
-                                <input type="date">
+                                <input type="date" placeholder="dd/mm/yyyy">
                                 <div class="to">To</div>
-                                <input type="date">
+                                <input type="date" placeholder="dd/mm/yyyy">
                                 <button class="search">Search</button>
                             </div>
 
@@ -238,15 +142,7 @@
                                 Reporting Information
                             </div>
                             <div class="report-current-content">
-                                <div class="total">
-                                    Total amount received : 100000000000 VND
-                                </div>
-                                <div class="number-orders">
-                                    Number of orders : 10
-                                </div>
-                                <div class="number-products">
-                                    Number of products : 10
-                                </div>
+                                
                             </div>
 
                         </div>
@@ -263,166 +159,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="order-id">
-                                                HD00001
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="customer-name">
-                                                Tieu Khai Hoan
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="total-amount">
-                                                6000000 VND
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="date">
-                                                29/02/2024
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantities">
-                                                5
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="view-detail">
-                                                View
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="order-id">
-                                                HD00001
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="customer-name">
-                                                Tieu Khai Hoan
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="total-amount">
-                                                6000000 VND
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="date">
-                                                29/02/2024
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantities">
-                                                5
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="view-detail">
-                                                View
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="order-id">
-                                                HD00001
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="customer-name">
-                                                Tieu Khai Hoan
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="total-amount">
-                                                6000000 VND
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="date">
-                                                29/02/2024
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantities">
-                                                5
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="view-detail">
-                                                View
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="order-id">
-                                                HD00001
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="customer-name">
-                                                Tieu Khai Hoan
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="total-amount">
-                                                6000000 VND
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="date">
-                                                29/02/2024
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantities">
-                                                5
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="view-detail">
-                                                View
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="order-id">
-                                                HD00001
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="customer-name">
-                                                Tieu Khai Hoan
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="total-amount">
-                                                6000000 VND
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="date">
-                                                29/02/2024
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantities">
-                                                5
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="view-detail">
-                                                View
-                                            </button>
-                                        </td>
-                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -433,6 +170,7 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets//js/Reporting.js"></script>
 </body>
 
 </html>

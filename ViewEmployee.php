@@ -19,56 +19,7 @@
             </a>
             <div class="menu">
                 <ul>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-users"></i>
-                            </span>
-                            <div class="text">
-                                Account Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-brands fa-product-hunt"></i>
-                            </span>
-                            <div class="text">
-                                Product Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </span>
-                            <div class="text">
-                                Customer Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-coins"></i>
-                            </span>
-                            <div class="text">
-                                Transaction Processing
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-chart-simple"></i>
-                            </span>
-                            <div class="text">
-                                Reporting and Analytics
-                            </div>
-                        </div>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -89,56 +40,7 @@
                         </div>
                         <div class="sider-info">
                             <ul>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-users"></i>
-                                        </span>
-                                        <div class="text">
-                                            Account Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-brands fa-product-hunt"></i>
-                                        </span>
-                                        <div class="text">
-                                            Product Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-circle-user"></i>
-                                        </span>
-                                        <div class="text">
-                                            Customer Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-coins"></i>
-                                        </span>
-                                        <div class="text">
-                                            Transaction Processing
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-chart-simple"></i>
-                                        </span>
-                                        <div class="text">
-                                            Reporting and Analytics
-                                        </div>
-                                    </div>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -222,51 +124,7 @@
                                 View Employee
                             </div>
                             <form action="">
-                                <div class="fifth">
-                                    <div class="date-input">
-                                        <label for="stock">Full Name</label>
-                                        <input type="text" name="fullname" id="fullname" value="Tieu Khai Hoan" disabled>
-                                    </div>
-                                    <div class="barcode-input">
-                                        <label for="barcode">Email</label>
-                                        <input type="email" name="email" id="email" value="tieukhaihoan127@gmail.com" disabled>
-                                    </div>
-                                </div>
-                                <div class="third">
-                                    <div class="left-input">
-                                        <div class="dob">
-                                            <label for="stock">Date of Birth</label>
-                                            <input type="date" name="dob" id="dob" value="2022-01-01" disabled>
-                                        </div>
-                                        <div class="gender">
-                                            <label for="gender">Gender</label>
-                                            <select name="gender" id="gender" disabled>
-                                                <option value="male">Nam</option>
-                                                <option value="female">Nữ</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="email-input">
-                                        <label for="email">Phone</label>
-                                        <input type="text" name="phone" id="phone" value="0123456789" disabled>
-                                    </div>
-                                </div>
-                                <div class="first">
-                                    <div class="address-input">
-                                        <label for="retail">Address</label>
-                                        <input type="text" name="address" id="address" value="123 Nguyen Thi Thap P12 Q7" disabled>
-                                    </div>
-                                </div>
-                                <div class="fourth">
-                                    <div class="picture">
-                                        <label for="choose=pic">Picture :</label>
-                                        <button class="choose-pic">Choose Image</button>
-                                    </div>
-                                    <div class="image">
-                                        <img src="./assets/images/avatar.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="submit-product" type="submit">Done</div>
+                                
                             </form>
                         </div>
                     </div>
@@ -276,6 +134,7 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/ViewEmployee.js"></script>
 </body>
 
 </html>

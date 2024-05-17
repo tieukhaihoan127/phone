@@ -1,3 +1,8 @@
+<?php
+    require("./PHPMailer/sendemail.php");
+    send_email("tieukhaihoan127@gmail.com");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -234,5 +239,6 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/CheckoutForm.js"></script>
 </body>
 </html>

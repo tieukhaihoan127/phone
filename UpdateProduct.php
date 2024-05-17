@@ -87,56 +87,7 @@
                         </div>
                         <div class="sider-info">
                             <ul>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-users"></i>
-                                        </span>
-                                        <div class="text">
-                                            Account Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-brands fa-product-hunt"></i>
-                                        </span>
-                                        <div class="text">
-                                            Product Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-circle-user"></i>
-                                        </span>
-                                        <div class="text">
-                                            Customer Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-coins"></i>
-                                        </span>
-                                        <div class="text">
-                                            Transaction Processing
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-chart-simple"></i>
-                                        </span>
-                                        <div class="text">
-                                            Reporting and Analytics
-                                        </div>
-                                    </div>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -219,41 +170,8 @@
                             <div class="title">
                                 Update Product
                             </div>
-                            <form action="">
-                                <div class="first">
-                                        <label for="fullname">Product Name :</label>
-                                        <input type="text" name="fullname" id="fullname" required>
-                                </div>
-                                <div class="second">
-                                    <div class="import-input">
-                                        <label for="import">Import Price :</label>
-                                        <input type="text" name="import" id="import" required>
-                                    </div>
-                                    <div class="retail-input">
-                                        <label for="retail">Retail Price :</label>
-                                        <input type="text" name="retail" id="retail" required>
-                                    </div>
-                                </div>
-                                <div class="third">
-                                    <div class="category-input">
-                                        <label for="category">Category :</label>
-                                        <input type="text" name="category" id="category" required>
-                                    </div>
-                                    <div class="stock-input">
-                                        <label for="stock">Color :</label>
-                                        <input type="text" name="stock" id="stock" required>
-                                    </div>
-                                </div>
-                                <div class="fourth">
-                                    <div class="picture">
-                                        <label for="choose=pic">Picture :</label>
-                                        <button class="choose-pic">Choose Image</button>
-                                    </div>
-                                    <div class="image">
-                                        <img src="./assets/images/avatar.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="submit-product" type="submit">Update</div>
+                            <form action="http://localhost:8080/FinalWeb/api/ProductCatalog/update-product.php" method="POST">
+                                
                             </form>
                         </div>
                     </div>
@@ -263,5 +181,6 @@
 </div>
 
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/UpdateProduct.js"></script>
 </body>
 </html>

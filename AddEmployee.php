@@ -1,3 +1,44 @@
+<?php
+    require_once('./save-salesperson-information.php');
+    require("vendor/autoload.php");
+    use Cloudinary\Configuration\Configuration;
+    use Cloudinary\Api\Upload\UploadApi;
+
+    Configuration::instance([
+        'cloud' => [
+        'cloud_name' => 'dvvdcqzmn', 
+        'api_key' => '326819667684664', 
+        'api_secret' => 'uHtSnZNFq0uwvqrryB3t7EnnBJM'],
+        'url' => [
+        'secure' => true]]);
+
+    if(isset($_FILES['avatar'])) {
+        $imgName =  $_FILES['avatar']['name'];
+        $imgPath = $_FILES['avatar']['tmp_name']; 
+        $uploadApi = new UploadApi(); 
+        $image = $uploadApi->upload($imgPath); 
+        $avatarLink =  $image['secure_url']; 
+    }
+
+    $err='';
+    if($_SERVER['REQUEST_METHOD']=='POST'){
+        $conn = get_connection();
+        $sql = 'SELECT * FROM accountallemployee WHERE UserName = ?';
+        $stmt= $conn->prepare($sql);
+        $username = substr($_POST['email'],0,strpos($_POST['email'],"@"));
+        $stmt->execute(array($username));
+        if($stmt->fetch()){
+            $err="your email is used!";
+        }else{
+            $emailParts = explode('@', $_POST['email']);
+            $pass = $emailParts[0];
+            echo $pass;
+            if(saveNewSaleperson($avatarLink,$pass,$_POST['fullname'],$_POST['email'],$_POST['address'],$_POST['gender'],$_POST['dob']))
+            header('location: EmployeesList.php');
+        }
+}
+?>  
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,56 +60,7 @@
             </a>
             <div class="menu">
                 <ul>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-users"></i>
-                            </span>
-                            <div class="text">
-                                Account Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-brands fa-product-hunt"></i>
-                            </span>
-                            <div class="text">
-                                Product Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </span>
-                            <div class="text">
-                                Customer Management
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-coins"></i>
-                            </span>
-                            <div class="text">
-                                Transaction Processing
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-item">
-                            <span class="icon-sider">
-                                <i class="fa-solid fa-chart-simple"></i>
-                            </span>
-                            <div class="text">
-                                Reporting and Analytics
-                            </div>
-                        </div>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -221,7 +213,7 @@
                             <div class="title">
                                 Add Employee
                             </div>
-                            <form action="">
+                            <form action="AddEmployee.php" method="post" enctype="multipart/form-data">
                                 <div class="fifth">
                                     <div class="date-input">
                                         <label for="stock">Full Name</label>
@@ -259,14 +251,20 @@
                                 </div>
                                 <div class="fourth">
                                     <div class="picture">
-                                        <label for="choose=pic">Picture :</label>
-                                        <button class="choose-pic">Choose Image</button>
+                                        <input name="avatar" type="file" class="custom-file-input" id="customFile" accept="image/gif, image/jpeg, image/png, image/bmp">
                                     </div>
                                     <div class="image">
-                                        <img src="./assets/images/avatar.jpg" alt="">
+                                        <img id="ava_preview" src="./assets/images/avatar.jpg" alt="">
                                     </div>
+                                    <?php
+                                        if($err !=''){
+                                            echo '<div style="color: red; background-color: #f3a7a7; border-radius:10px;padding: 10px;"> <label >'.$err.'</label> </div>';
+                                        }
+                                    ?>
+                                    
                                 </div>
-                                <div class="submit-product" type="submit">Done</div>
+                                <button class="submit-product" id="submitBtn" type="submit">Done</button>
+                                
                             </form>
                         </div>
                     </div>
@@ -276,6 +274,22 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script>
+    const fileInput = document.getElementById('customFile');
+    const imagePreview = document.querySelector('#ava_preview');
+
+    fileInput.addEventListener('change', function() {
+        const file = this.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+</script>
 </body>
 
 </html>

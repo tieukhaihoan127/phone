@@ -203,6 +203,7 @@
 .main .content .body .order-list table tr td .view-detail:hover{
     background-color: rgb(30, 108, 198);
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 
 .main .content .body .body-content .second table tr td .action{

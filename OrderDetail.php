@@ -17,56 +17,7 @@
                     </a>
                     <div class="menu">
                         <ul>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-users"></i>
-                                    </span>
-                                    <div class="text">
-                                        Account Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-brands fa-product-hunt"></i>
-                                    </span>
-                                    <div class="text">
-                                        Product Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-circle-user"></i>
-                                    </span>
-                                    <div class="text">
-                                        Customer Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-coins"></i>
-                                    </span>
-                                    <div class="text">
-                                        Transaction Processing
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-chart-simple"></i>
-                                    </span>
-                                    <div class="text">
-                                        Reporting and Analytics
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
             </div>
@@ -333,122 +284,14 @@
                                             <thead>
                                                 <tr>
                                                     <th>Items Name</th>
+                                                    <th>Color</th>
                                                     <th>Quantities</th>
                                                     <th>Price</th>
                                                     <th>Total</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="item">
-                                                            Iphone 4
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="quantity">
-                                                            2
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="price">
-                                                            5000000 VND
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="total">
-                                                            10000000 VND
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="item">
-                                                            Iphone 4
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="quantity">
-                                                            2
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="price">
-                                                            5000000 VND
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="total">
-                                                            10000000 VND
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="item">
-                                                            Iphone 4
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="quantity">
-                                                            2
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="price">
-                                                            5000000 VND
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="total">
-                                                            10000000 VND
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="item">
-                                                            Iphone 4
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="quantity">
-                                                            2
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="price">
-                                                            5000000 VND
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="total">
-                                                            10000000 VND
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="item">
-                                                            Iphone 4
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="quantity">
-                                                            2
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="price">
-                                                            5000000 VND
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="total">
-                                                            10000000 VND
-                                                        </div>
-                                                    </td>
-                                                </tr>
+   
                                             </tbody>
                                         </table>
                                     </div>
@@ -461,5 +304,6 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/OrderDetail.js"></script>
 </body>
 </html>

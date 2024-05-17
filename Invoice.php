@@ -17,56 +17,7 @@
                 </a>
                 <div class="menu">
                     <ul>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-solid fa-users"></i>
-                                </span>
-                                <div class="text">
-                                    Account Management
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-brands fa-product-hunt"></i>
-                                </span>
-                                <div class="text">
-                                    Product Management
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-solid fa-circle-user"></i>
-                                </span>
-                                <div class="text">
-                                    Customer Management
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-solid fa-coins"></i>
-                                </span>
-                                <div class="text">
-                                    Transaction Processing
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu-item">
-                                <span class="icon-sider">
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                </span>
-                                <div class="text">
-                                    Reporting and Analytics
-                                </div>
-                            </div>
-                        </li>
+
                     </ul>
                 </div>
         </div>
@@ -211,7 +162,7 @@
             </div>
             <div class="body">
                 <div class="container">
-                    <div class="invoice-content">
+                    <div class="invoice-content" id="invoice">
                         <div class="first">
                             <div class="image">
                                 <img src="./assets/images/logobig.png" alt="">
@@ -275,102 +226,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th>
-                                            <div class="num">
-                                                01
-                                            </div>
-                                        </th>
-                                        <td>
-                                            <div class="product">
-                                                <div class="product-name">
-                                                    Iphone 9
-                                                </div>
-                                                <div class="color">
-                                                    Color: Green
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="price">
-                                                10000000 VND
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantity">
-                                                1
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="total">
-                                                10000000 VND
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <div class="num">
-                                                02
-                                            </div>
-                                        </th>
-                                        <td>
-                                            <div class="product">
-                                                <div class="product-name">
-                                                    Iphone X
-                                                </div>
-                                                <div class="color">
-                                                    Color: Red
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="price">
-                                                20000000 VND
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantity">
-                                                1
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="total">
-                                                20000000 VND
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <div class="num">
-                                                03
-                                            </div>
-                                        </th>
-                                        <td>
-                                            <div class="product">
-                                                <div class="product-name">
-                                                    Iphone 11
-                                                </div>
-                                                <div class="color">
-                                                    Color: Grey
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="price">
-                                                10000000 VND
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantity">
-                                                1
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="total">
-                                                10000000 VND
-                                            </div>
-                                        </td>
-                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -389,5 +245,6 @@
 </div>
 
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/Invoice.js"></script>
 </body>
 </html>

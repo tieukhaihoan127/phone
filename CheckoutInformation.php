@@ -87,56 +87,7 @@
                             </div>
                             <div class="sider-info">
                                 <ul>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-users"></i>
-                                            </span>
-                                            <div class="text">
-                                                Account Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-brands fa-product-hunt"></i>
-                                            </span>
-                                            <div class="text">
-                                                Product Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-circle-user"></i>
-                                            </span>
-                                            <div class="text">
-                                                Customer Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-coins"></i>
-                                            </span>
-                                            <div class="text">
-                                                Transaction Processing
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-chart-simple"></i>
-                                            </span>
-                                            <div class="text">
-                                                Reporting and Analytics
-                                            </div>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -226,42 +177,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="desc">
-                                                            Order Id :
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="content">
-                                                            HD00001
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="desc">
-                                                            Date Of Purchase :
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="date">
-                                                            29/02/2024
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="desc">
-                                                            Employee Name :
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="name">
-                                                            Tieu Khai Hoan
-                                                        </div>
-                                                    </td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -279,42 +195,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="desc">
-                                                            Total Amount:
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="price">
-                                                            40000000 VND
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="desc">
-                                                            Given Money :
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="price">
-                                                            <input type="text" name="given-price"> VND
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="desc">
-                                                            Paid Back :
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="price">
-                                                            4000000 VND
-                                                        </div>
-                                                    </td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -376,5 +257,6 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets//js/CheckoutInformation.js"></script>
 </body>
 </html>

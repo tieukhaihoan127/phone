@@ -21,12 +21,11 @@
             </div>
             <div class="title">Change Password</div>
         </div>
-        <form action="">
-            <input type="text" placeholder="Username" name="username" required>
-            <input type="text" placeholder="Password" name="password" required>
-            <input type="text" placeholder="Re-password" name="re-password" required>
+        <form action="" method="POST">
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="password" placeholder="New Password" name="re-password" required>
             <button class="sign-in">Confirm</button>
         </form>
 </body>
-
+<script src="./assets/js/ChangePassword.js"></script>
 </html>

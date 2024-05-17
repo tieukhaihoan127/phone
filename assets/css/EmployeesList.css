@@ -26,14 +26,6 @@
     padding: 7px 15px;
     box-shadow: 0 2px 6px 0px rgba(251,116,144, .5);
     border: 1px solid #fa5c7c;
-}
-
-.main .content .body .body-content .first .add-account:hover{
-    background-color: #ea6882;
-    transition: 0.5s all ease;
-}
-
-.main .content .body .body-content .first .add-account a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,12 +33,19 @@
     text-decoration: none;
 }
 
-.main .content .body .body-content .first .add-account a span{
+.main .content .body .body-content .first .add-account:hover{
+    background-color: #ea6882;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+
+.main .content .body .body-content .first .add-account span{
     font-size: 13px;
     margin-right: 10px;
 }
 
-.main .content .body .body-content .first .add-account a .text{
+.main .content .body .body-content .first .add-account .text{
     font-size: 15px;
 }
 
@@ -108,7 +107,7 @@
     background-color: #EFF2F7;
 }
 
-.main .content .body .body-content .second table tr th:hover {
+.main .content .body .body-content .second table thead:hover {
     background-color: #91969e;
     transition: 0.5s all ease;
     cursor: pointer;
@@ -186,6 +185,15 @@
 .main .content .body .body-content .second table tr td .manage:hover{
     background-color: rgb(196, 28, 33);
     transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+.main .content .body .body-content .second table tr td .manage.active {
+    background-color: #18f373;
+}
+
+.main .content .body .body-content .second table tr td .manage.active:hover {
+    background-color: #1cda6b;
 }
 
 .main .content .body .body-content .second table tr td .resend {
@@ -200,6 +208,7 @@
 .main .content .body .body-content .second table tr td .resend:hover{
     background-color: rgb(30, 108, 198);
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 
 .main .content .body .body-content .second table tr td .view {
@@ -214,6 +223,7 @@
 .main .content .body .body-content .second table tr td .view:hover{
     background-color: rgb(200, 203, 29);
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 
 .main .content .body .body-content .second table tr td .action{

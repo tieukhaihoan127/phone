@@ -148,7 +148,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    align-items: flex-start;
+    align-items: center;
  }
 
  .main .content .body .body-content .second table tr td .product-name .product-info .name{
@@ -157,6 +157,7 @@
  }
 
  .main .content .body .body-content .second table tr td .product-name .product-info .stock{
+    margin-top: 5px;
     font-size: 11px;
     color:rgb(14, 187, 14);
  }

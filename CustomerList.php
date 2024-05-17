@@ -17,56 +17,7 @@
                     </a>
                     <div class="menu">
                         <ul>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-users"></i>
-                                    </span>
-                                    <div class="text">
-                                        Account Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-brands fa-product-hunt"></i>
-                                    </span>
-                                    <div class="text">
-                                        Product Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-circle-user"></i>
-                                    </span>
-                                    <div class="text">
-                                        Customer Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-coins"></i>
-                                    </span>
-                                    <div class="text">
-                                        Transaction Processing
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-chart-simple"></i>
-                                    </span>
-                                    <div class="text">
-                                        Reporting and Analytics
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
             </div>
@@ -87,56 +38,7 @@
                             </div>
                             <div class="sider-info">
                                 <ul>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-users"></i>
-                                            </span>
-                                            <div class="text">
-                                                Account Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-brands fa-product-hunt"></i>
-                                            </span>
-                                            <div class="text">
-                                                Product Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-circle-user"></i>
-                                            </span>
-                                            <div class="text">
-                                                Customer Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-coins"></i>
-                                            </span>
-                                            <div class="text">
-                                                Transaction Processing
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-chart-simple"></i>
-                                            </span>
-                                            <div class="text">
-                                                Reporting and Analytics
-                                            </div>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -223,134 +125,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="customer">
-                                                <img src="./assets/images/avatar.jpg" alt="">
-                                                <div class="name">
-                                                    Tiêu Khải Hoàn
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="phone">
-                                                0764795487
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="address">
-                                                123 Nguyen Thi Thap P12 Q7
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="purchase-history">
-                                                View
-                                            </button>
-                                        </td>
-                                        <td>
-                                            <div class="action">
-                                                <div class="view-customer">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="customer">
-                                                <img src="./assets/images/avatar.jpg" alt="">
-                                                <div class="name">
-                                                    Tiêu Khải Hoàn
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="phone">
-                                                0764795487
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="address">
-                                                123 Nguyen Thi Thap P12 Q7
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="purchase-history">
-                                                View
-                                            </button>
-                                        </td>
-                                        <td>
-                                            <div class="action">
-                                                <div class="view-customer">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="customer">
-                                                <img src="./assets/images/avatar.jpg" alt="">
-                                                <div class="name">
-                                                    Tiêu Khải Hoàn
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="phone">
-                                                0764795487
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="address">
-                                                123 Nguyen Thi Thap P12 Q7
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="purchase-history">
-                                                View
-                                            </button>
-                                        </td>
-                                        <td>
-                                            <div class="action">
-                                                <div class="view-customer">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="customer">
-                                                <img src="./assets/images/avatar.jpg" alt="">
-                                                <div class="name">
-                                                    Tiêu Khải Hoàn
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="phone">
-                                                0764795487
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="address">
-                                                123 Nguyen Thi Thap P12 Q7
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="purchase-history">
-                                                View
-                                            </button>
-                                        </td>
-                                        <td>
-                                            <div class="action">
-                                                <div class="view-customer">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+
                                 </tbody>
                             </table>   
                         </div>
@@ -360,5 +135,6 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/CustomerList.js"></script>
 </body>
 </html>

@@ -17,56 +17,7 @@
                     </a>
                     <div class="menu">
                         <ul>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-users"></i>
-                                    </span>
-                                    <div class="text">
-                                        Account Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-brands fa-product-hunt"></i>
-                                    </span>
-                                    <div class="text">
-                                        Product Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-circle-user"></i>
-                                    </span>
-                                    <div class="text">
-                                        Customer Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-coins"></i>
-                                    </span>
-                                    <div class="text">
-                                        Transaction Processing
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-chart-simple"></i>
-                                    </span>
-                                    <div class="text">
-                                        Reporting and Analytics
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
             </div>
@@ -87,56 +38,7 @@
                             </div>
                             <div class="sider-info">
                                 <ul>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-users"></i>
-                                            </span>
-                                            <div class="text">
-                                                Account Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-brands fa-product-hunt"></i>
-                                            </span>
-                                            <div class="text">
-                                                Product Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-circle-user"></i>
-                                            </span>
-                                            <div class="text">
-                                                Customer Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-coins"></i>
-                                            </span>
-                                            <div class="text">
-                                                Transaction Processing
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-chart-simple"></i>
-                                            </span>
-                                            <div class="text">
-                                                Reporting and Analytics
-                                            </div>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -214,7 +116,7 @@
                         <div class="list">
                             <div class="num-desc">
                                 <div class="num">
-                                    Sản phẩm hiện tại : 4
+                                    Sản phẩm hiện tại : 0
                                 </div>
                                 <button class="refresh">
                                     <i class="fa-solid fa-arrows-rotate"></i>
@@ -222,22 +124,22 @@
                             </div>
                             <div class="search-content">
                                 <div class="search-name">
-                                    <form action="">
+                                    <div class="form">
                                         <span class="icon-search">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </span>
-                                        <input type="text" value="" name="search">
+                                        <input type="text" value="" name="search" id="search">
                                         <button type="submit" class="search-button">Search</button>
-                                    </form>
+                                    </div>
                                 </div>
                                 <div class="search-barcode">
-                                    <form action="">
+                                    <div class="form">
                                         <span class="icon-search">
                                             <i class="fa-solid fa-barcode"></i>
                                         </span>
-                                        <input type="text" value="" name="barcode">
+                                        <input type="text" value="" name="barcode" id="barcode">
                                         <button type="submit" class="search-button">Enter</button>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                             <div class="order-list">
@@ -252,146 +154,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="product-name">
-                                                    <img src="./assets//images/product-6.jpg" alt="">
-                                                    <div class="product-info">
-                                                        <div class="name">
-                                                            Iphone 9
-                                                        </div>
-                                                        <div class="color">
-                                                            Color: Purple
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="num">
-                                                    <input type="number" name="quantity" min="1" value="1">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="price">
-                                                    10000000
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="total">
-                                                    20000000
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="icon">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="product-name">
-                                                    <img src="./assets//images/product-6.jpg" alt="">
-                                                    <div class="product-info">
-                                                        <div class="name">
-                                                            Iphone 9
-                                                        </div>
-                                                        <div class="color">
-                                                            Color: Purple
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="num">
-                                                    <input type="number" name="quantity" min="1" value="1">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="price">
-                                                    10000000
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="total">
-                                                    20000000
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="icon">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="product-name">
-                                                    <img src="./assets//images/product-6.jpg" alt="">
-                                                    <div class="product-info">
-                                                        <div class="name">
-                                                            Iphone 9
-                                                        </div>
-                                                        <div class="color">
-                                                            Color: Purple
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="num">
-                                                    <input type="number" name="quantity" min="1" value="1">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="price">
-                                                    10000000
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="total">
-                                                    20000000
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="icon">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="product-name">
-                                                    <img src="./assets//images/product-6.jpg" alt="">
-                                                    <div class="product-info">
-                                                        <div class="name">
-                                                            Iphone 9
-                                                        </div>
-                                                        <div class="color">
-                                                            Color: Purple
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="num">
-                                                    <input type="number" name="quantity" min="1" value="1">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="price">
-                                                    10000000
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="total">
-                                                    20000000
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="icon">
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -407,5 +170,6 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/CheckoutOrderList.js"></script>
 </body>
 </html>

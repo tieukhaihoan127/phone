@@ -235,13 +235,13 @@
 }
 
 .main .content .body .add-product .content form .submit-product {
-    text-align: center;
     padding:10px 15px;
     border-radius: 5px;
     border:none;
     background-color: #18f373;
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     display: block;
 }
 

@@ -17,56 +17,7 @@
                     </a>
                     <div class="menu">
                         <ul>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-users"></i>
-                                    </span>
-                                    <div class="text">
-                                        Account Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-brands fa-product-hunt"></i>
-                                    </span>
-                                    <div class="text">
-                                        Product Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-circle-user"></i>
-                                    </span>
-                                    <div class="text">
-                                        Customer Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-coins"></i>
-                                    </span>
-                                    <div class="text">
-                                        Transaction Processing
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-chart-simple"></i>
-                                    </span>
-                                    <div class="text">
-                                        Reporting and Analytics
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
             </div>
@@ -214,14 +165,12 @@
                         <div class="body-content">
                             <div class="first">
                                 <button class="add-account">
-                                    <a href="">
                                         <span>
                                             <i class="fa-solid fa-plus"></i>
                                         </span>
                                         <div class="text">
                                             Add Account
                                         </div>
-                                    </a>
                                 </button>
                                 <div class="search-input">
                                     <form action="">
@@ -247,236 +196,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                E0001
-                                            </td>
-                                            <td>
-                                                <div class="employee">
-                                                    <img src="./assets/images/avatar.jpg" alt="">
-                                                    <div class="name">
-                                                        Tiêu Khải Hoàn
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="status">
-                                                    Active
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="manage">
-                                                    Lock
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="resend">
-                                                    Resend
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="view">
-                                                    View
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <div class="action">
-                                                    <div class="view-employee">
-                                                        <i class="fa-regular fa-eye"></i>
-                                                    </div>
-                                                    <div class="update-employee">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </div>
-                                                    <div class="delete-employee">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                E0002
-                                            </td>
-                                            <td>
-                                                <div class="employee">
-                                                    <img src="./assets/images/avatar.jpg" alt="">
-                                                    <div class="name">
-                                                        Tiêu Khải Hoàn
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="status">
-                                                    Active
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="manage">
-                                                    Lock
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="resend">
-                                                    Resend
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="view">
-                                                    View
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <div class="action">
-                                                    <div class="view-employee">
-                                                        <i class="fa-regular fa-eye"></i>
-                                                    </div>
-                                                    <div class="update-employee">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </div>
-                                                    <div class="delete-employee">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                E0003
-                                            </td>
-                                            <td>
-                                                <div class="employee">
-                                                    <img src="./assets/images/avatar.jpg" alt="">
-                                                    <div class="name">
-                                                        Tiêu Khải Hoàn
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="status">
-                                                    Active
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="manage">
-                                                    Lock
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="resend">
-                                                    Resend
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="view">
-                                                    View
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <div class="action">
-                                                    <div class="view-employee">
-                                                        <i class="fa-regular fa-eye"></i>
-                                                    </div>
-                                                    <div class="update-employee">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </div>
-                                                    <div class="delete-employee">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                E0004
-                                            </td>
-                                            <td>
-                                                <div class="employee">
-                                                    <img src="./assets/images/avatar.jpg" alt="">
-                                                    <div class="name">
-                                                        Tiêu Khải Hoàn
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="status">
-                                                    Active
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="manage">
-                                                    Lock
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="resend">
-                                                    Resend
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="view">
-                                                    View
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <div class="action">
-                                                    <div class="view-employee">
-                                                        <i class="fa-regular fa-eye"></i>
-                                                    </div>
-                                                    <div class="update-employee">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </div>
-                                                    <div class="delete-employee">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                E0005
-                                            </td>
-                                            <td>
-                                                <div class="employee">
-                                                    <img src="./assets/images/avatar.jpg" alt="">
-                                                    <div class="name">
-                                                        Tiêu Khải Hoàn
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="status">
-                                                    Active
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="manage">
-                                                    Lock
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="resend">
-                                                    Resend
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <button class="view">
-                                                    View
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <div class="action">
-                                                    <div class="view-employee">
-                                                        <i class="fa-regular fa-eye"></i>
-                                                    </div>
-                                                    <div class="update-employee">
-                                                        <i class="fa-solid fa-pen"></i>
-                                                    </div>
-                                                    <div class="delete-employee">
-                                                        <i class="fa-solid fa-trash"></i>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -487,5 +207,6 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/EmployeesList.js"></script>
 </body>
 </html>

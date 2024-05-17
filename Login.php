@@ -1,3 +1,65 @@
+<?php
+session_start();
+require_once('./PHPMailer/sendemail.php');
+require_once('./data-provider.php');
+function checkToken($email, $token) {
+    $sql = 'SELECT * FROM active WHERE email = ? AND token = ?';
+    $conn = get_connection();
+    $stmt = $conn->prepare($sql);
+    if ($stmt->execute(array($email, $token))) {
+        $data = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (time() < $data['time']) {
+            return true;
+        }
+        return false;
+    }
+    return false;
+}
+if(isset($_SESSION['token'])){
+    $flag = checkToken($_SESSION['email'],$_SESSION['token']);
+}else if (isset($_GET['email']) && isset($_GET['token'])) {
+    $flag = checkToken($_GET['email'], $_GET['token']);
+    if($flag){
+        $_SESSION['email'] = $_GET['email'];
+        $_SESSION['token'] = $_GET['token'];
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $conn = get_connection();
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $sql = 'SELECT * FROM accountallemployee as a, salesperson as s WHERE a.UserName = ? AND a.UserName = s.UserName';
+    $stmt = $conn->prepare($sql);
+    if ($stmt->execute(array($username))) {
+        $data = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($data && $data['PASSWORD'] == $password) {
+            if ($data['SalesPersonInactivate'] == 1) {
+                if (isset($flag) && $flag) {
+                    $_SESSION['username'] = $username;
+                    header('location: ChangePassword.php');
+                    exit();
+                } else {
+                    $error = 'Tài khoản chưa xác thực';
+                    echo $error;
+                }
+            } else {
+                $_SESSION['username'] = $username;
+                header('location: AdminDashboard.php');
+                exit();
+            }
+        } else {
+            $error = 'Tên người dùng hoặc mật khẩu không đúng';
+            echo $error;
+        }
+    } else {
+        $error = 'Lỗi cơ sở dữ liệu';
+        echo $error;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,9 +83,9 @@
             </div>
             <div class="title">Sign In</div>
         </div>
-        <form action="">
-            <input type="text" placeholder="Username" name="username" required>
-            <input type="text" placeholder="Password" name="password" required>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>
+        <input type="text" placeholder="Username" name="username" required>
+            <input type="password" id="password" placeholder="Password" name="password" required>
             <div class="func">
                 <div class="remember">
                     <input type="checkbox" id="remember" name="remember" value="remember">

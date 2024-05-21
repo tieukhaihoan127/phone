@@ -1,6 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
 
+    // Thêm mới hóa đơn 
     async function updatedData(updateData) {
         try {
     
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
 
-    let isNewUser = false;
+    let isNewUser = false; // Kiểm tra phải người dùng mới 
 
     fetchEmployeeDataAndUpdateHTML();
 
@@ -127,6 +128,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     }
                     else {
                         isNewUser = true;
+                        name.value = "";
+                        address.value = "";
                         alert("Tài khoản khách hàng chưa tồn tại !");
                     }
 ;                });
@@ -139,7 +142,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             if(givenInput) {
                 givenInput.addEventListener("blur", () => {
                     if(givenInput.value == "") {
-                        totalPrice.innerHTML = data.TotalSum.toString() + " VND";
+                        totalPrice.innerHTML = "-" + data.TotalSum.toString() + " VND";
                     }
                     else {
                         const totalAmount = parseInt(data.TotalSum);
@@ -153,17 +156,17 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Confirm Checkout Information
             const confirmButton = document.querySelector(".main .content .body .order-detail .order-second .order-function .button .confirm");
             if(confirmButton) {
-                confirmButton.addEventListener("click",() => {
-                    // if(phone.value == "" || name.value == "" || address.value == ""){
-                    //     alert("Vui lòng điền đầy đủ thông tin khách hàng !");
-                    //     return;
-                    // }
+                confirmButton.addEventListener("click",async () => {
+                    if(phone.value == "" || name.value == "" || address.value == ""){
+                        alert("Vui lòng điền đầy đủ thông tin khách hàng !");
+                        return;
+                    }
 
                     let paidBack = parseInt(totalPrice.innerHTML.trim().split(" ")[0]);
-                    // if(paidBack < 0) {
-                    //     alert("Khách hàng chưa trả đủ tiền !");
-                    //     return;
-                    // }
+                    if(paidBack < 0) {
+                        alert("Khách hàng chưa trả đủ tiền !");
+                        return;
+                    }
 
                     const updateData = {
                         CustomerPhoneNumber: phone.value,
@@ -177,13 +180,21 @@ document.addEventListener("DOMContentLoaded", async () => {
                     }
 
                     let sendData = JSON.stringify(updateData);
-                    updatedData(sendData)
-                    
+                    await updatedData(sendData)                    
                     window.location.href = "http://localhost:8080/FinalWeb/Invoice.php";
         
                 });
             }
             // End Confirm Checkout Information
+
+            // Back Information
+            const back = document.querySelector(".main .content .body .order-detail .order-second .order-function .button .back");
+            if(back) {
+                back.addEventListener("click",() => {
+                    window.location.href = "http://localhost:8080/FinalWeb/CheckoutOrderList.php";
+                });
+            }
+            // End Back Information
 
 
         } catch (error) {

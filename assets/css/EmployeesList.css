@@ -170,7 +170,14 @@
     background-color: #1cda6b;
     transition: 0.5s all ease;
     cursor: pointer;
+}
 
+.main .content .body .body-content .second table tr td .status.active {
+    background-color: rgb(224, 11, 18);
+}
+
+.main .content .body .body-content .second table tr td .status.active:hover{
+    background-color: rgb(196, 28, 33);
 }
 
 .main .content .body .body-content .second table tr td .manage {
@@ -209,6 +216,14 @@
     background-color: rgb(30, 108, 198);
     transition: 0.5s all ease;
     cursor: pointer;
+}
+
+.main .content .body .body-content .second table tr td .resend.disable {
+    background-color: #A9A9A9;
+}
+
+.main .content .body .body-content .second table tr td .resend.disable:hover{
+    cursor:default;
 }
 
 .main .content .body .body-content .second table tr td .view {

@@ -1,8 +1,13 @@
 <?php
 require_once ('../Connection/data-provider.php');
+session_start();
 header('Content-Type: application/json');
 $rawData = file_get_contents("php://input");
 $data = json_decode($rawData, true);
+
+$order = $_SESSION['order'];
+$id = $order['InvoiceID'];
+$dataOrder = $order['CheckoutList'];
 
 if (is_array($data)) {
     $get_invoice_id = "SELECT InvoiceID FROM invoice ORDER BY InvoiceID DESC LIMIT 1";
@@ -21,9 +26,20 @@ if (is_array($data)) {
         pre_statement_without_param_non_query($sql_add_customer);
     }
     
-    $sql_update_invoice = "UPDATE invoice SET CustomerNumberPhone = '$phone', AmountMoneyCustomerGiven = '$givenMoney', AmoutMoneyBackCustomer = '$paidBack' WHERE InvoiceID = '$acc'";
+    $sql_add_invoice = "INSERT INTO invoice VALUES ('$id','$phone',CURRENT_DATE(),$givenMoney,$paidBack,'')";
+    pre_statement_without_param_non_query($sql_add_invoice);
 
-    pre_statement_without_param_non_query($sql_update_invoice);
+    for ($i = 0; $i < count($dataOrder); $i++) {
+        $barcode = $dataOrder[$i]['ProductBarcode'];
+        $numberItems = $dataOrder[$i]['ProductQuantities'];
+        $total = $dataOrder[$i]['ProductTotal'];
+
+
+        $sqlAddInvoiceDetail = "INSERT INTO invoicedetail VALUES ('$id','$barcode',$numberItems,$total)";
+        pre_statement_without_param_non_query($sqlAddInvoiceDetail);
+    }
+
+    echo json_encode($dataOrder);
 
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid data']);

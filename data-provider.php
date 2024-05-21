@@ -103,6 +103,23 @@
         return null;
     }
 
+    function get_query($sql)
+    {
+        $dbCon = get_connection();
+        if ($dbCon) {
+            try {
+                $stmt = $dbCon->query($sql);
+                if ($stmt) {
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    return $row; 
+                } else {
+                    return null;
+                }
+            } catch (PDOException $ex) {
+            }
+        }
+    }
+
 
     // Change data convert to json 
     function change_data_covert_json ($sql , $parameters) {

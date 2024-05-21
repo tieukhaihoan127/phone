@@ -217,6 +217,23 @@ if(urlParamsCheckOK.has('successMessage')) {
 
 }
 
+// Personal Information
+const dataCheckAcc = async () => {
+    const checkType = await fetch("http://localhost:8080/FinalWeb/api/AccountManagement/get-account-by-username.php");
+    const dataCheck = await checkType.json();
+    return dataCheck;
+}
+
+dataCheckAcc().then(data => {
+    const personalName = document.querySelector(".main .content .header .header-content .information .admin .admin-info .admin-name");
+    const personalRole = document.querySelector(".main .content .header .header-content .information .admin .admin-info .role");
+    const personalPicture = document.querySelector(".main .content .header .header-content .information .admin .image img");
+    personalName.innerHTML = data.Name;
+    personalRole.innerHTML = data.Role;
+    personalPicture.src = data.Avatar;
+});
+// End Personal Information
+
 // Redirect 
 const local = "http://localhost:8080/FinalWeb/";
 
@@ -229,6 +246,7 @@ const dataCheck = async () => {
 dataCheck().then(data => {
     const type = parseInt(data.data[0].AccountType);
     const sidebarMenu = document.querySelector(".main .sider .menu ul");
+    const sidebarMenuSmall = document.querySelector(".main .content .header .header-content .current-content-smaller .sider-info ul");
     let value = "";
     
     if(type == 1) {
@@ -264,6 +282,8 @@ dataCheck().then(data => {
                     </div>
                 </li>`;
         sidebarMenu.insertAdjacentHTML("beforeend", value);
+        sidebarMenuSmall.insertAdjacentHTML("beforeend", value);
+
         const siderMenu = document.querySelectorAll(".main .sider .menu ul li");
         siderMenu[0].addEventListener("click", async () => {
             window.location.href = "http://localhost:8080/FinalWeb/ProductsList.php";
@@ -274,6 +294,19 @@ dataCheck().then(data => {
         });
 
         siderMenu[2].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/CheckoutOrderList.php";
+        });
+
+        const siderMenuSmall = document.querySelectorAll(".main .content .header .header-content .current-content-smaller .sider-info ul li");
+        siderMenuSmall[0].addEventListener("click", async () => {
+            window.location.href = "http://localhost:8080/FinalWeb/ProductsList.php";
+        });
+
+        siderMenuSmall[1].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/CustomerList.php";
+        });
+
+        siderMenuSmall[2].addEventListener("click", () => {
             window.location.href = "http://localhost:8080/FinalWeb/CheckoutOrderList.php";
         });
     }
@@ -329,6 +362,8 @@ dataCheck().then(data => {
                     </div>
                 </li>`;
         sidebarMenu.insertAdjacentHTML("beforeend", value);
+        sidebarMenuSmall.insertAdjacentHTML("beforeend", value);
+
         const siderMenu = document.querySelectorAll(".main .sider .menu ul li");
         siderMenu[0].addEventListener("click", async () => {
             window.location.href = "http://localhost:8080/FinalWeb/EmployeesList.php";
@@ -347,6 +382,27 @@ dataCheck().then(data => {
         });
 
         siderMenu[4].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/Reporting.php";
+        });
+
+        const siderMenuSmall = document.querySelectorAll(".main .content .header .header-content .current-content-smaller .sider-info ul li");
+        siderMenuSmall[0].addEventListener("click", async () => {
+            window.location.href = "http://localhost:8080/FinalWeb/EmployeesList.php";
+        });
+
+        siderMenuSmall[1].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/ProductsList.php";
+        });
+
+        siderMenuSmall[2].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/CustomerList.php";
+        });
+
+        siderMenuSmall[3].addEventListener("click", () => {
+            window.location.href = "http://localhost:8080/FinalWeb/CheckoutOrderList.php"
+        });
+
+        siderMenuSmall[4].addEventListener("click", () => {
             window.location.href = "http://localhost:8080/FinalWeb/Reporting.php";
         });
     }

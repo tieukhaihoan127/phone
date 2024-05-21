@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded",async () => {
     
             const tableBody = document.querySelector(".main .content .body .body-content .second table tbody");
     
+            // Render ra danh sách nhân viên, nếu nhân viên có SalesPersonLockAccount = 0 tức nghĩa là tài khoản không bị khóa, nếu nhân viên có SalesPersonInactivate = 0 tức nghĩa là tài khoản đã kích hoạt , vô hiệu hóa nút resend
             arr.forEach(item => {
                 const temp = `
                 <tr>
@@ -35,17 +36,17 @@ document.addEventListener("DOMContentLoaded",async () => {
                         </div>
                     </td>
                     <td>
-                        <button class="status" status-id=${item.SalesPersonID}>
-                            ${item.SalesPersonInactivate == 1 ? "Active" : "Inactive"}
+                        <button class="status ${item.SalesPersonInactivate == 0 ? "" : "active"}" status-id=${item.SalesPersonID}>
+                            ${item.SalesPersonInactivate == 0 ? "Active" : "Inactive"}
                         </button>
                     </td>
                     <td>
                         <button class="manage ${item.SalesPersonLockAccount == 0 ? "" : "active"}" lock-id=${item.SalesPersonID}>
-                            ${item.SalesPersonLockAccount == 1 ? "Unlock" : "Lock"}
+                            ${item.SalesPersonLockAccount == 0 ? "Lock" : "Unlock"}
                         </button>
                     </td>
                     <td>
-                        <button class="resend" resend-id=${item.SalesPersonEmailAddress}>
+                        <button class="resend ${item.SalesPersonInactivate == 0 ? "disable" : ""}" resend-id=${item.SalesPersonEmailAddress} ${item.SalesPersonInactivate == 0 ? "disabled" : ""}>
                             Resend
                         </button>
                     </td>
@@ -103,8 +104,8 @@ document.addEventListener("DOMContentLoaded",async () => {
         updateIcon.forEach(item => {
             item.addEventListener("click",() => {
                 const att = item.getAttribute("update-id");
-                const link = local + "UpdateEmployee.php?id=" + att;
-                console.log(link);
+                const link = local + "UpdateEmployeeInfo.php?id=" + att;
+                window.location.href = link;
             });
         });
     }

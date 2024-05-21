@@ -38,56 +38,7 @@
                             </div>
                             <div class="sider-info">
                                 <ul>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-users"></i>
-                                            </span>
-                                            <div class="text">
-                                                Account Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-brands fa-product-hunt"></i>
-                                            </span>
-                                            <div class="text">
-                                                Product Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-circle-user"></i>
-                                            </span>
-                                            <div class="text">
-                                                Customer Management
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-coins"></i>
-                                            </span>
-                                            <div class="text">
-                                                Transaction Processing
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="menu-item">
-                                            <span class="icon-sider">
-                                                <i class="fa-solid fa-chart-simple"></i>
-                                            </span>
-                                            <div class="text">
-                                                Reporting and Analytics
-                                            </div>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -95,12 +46,6 @@
                             <div class="menu">
                                 <span class="icon-bg">
                                     <i class="fa-solid fa-moon"></i>
-                                </span>
-                                <span class="icon-cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    <div class="number-cart">
-                                        5+
-                                    </div>
                                 </span>
                             </div>
                             <div class="information">
@@ -170,29 +115,7 @@
                                 <div class="title">
                                     Customer Detail
                                 </div>
-                                <div class="first">
-                                    <div class="fullname-input">
-                                        <div class="fullname">
-                                            Full Name
-                                        </div>
-                                        <input type="text" name="fullname" id="fullname" value="Tieu Khai Hoan"  disabled>
-                                    </div>
-                                    <div class="phone-input">
-                                        <div class="phone">
-                                            Phone Number
-                                        </div>
-                                        <input type="text" name="phone" id="phone" value="0123456789"  disabled>
-                                    </div>
-                                </div>
-                                <div class="second">
-                                    <div class="address-input">
-                                        <div class="address">
-                                            Address
-                                        </div>
-                                        <input type="text" name="address" id="address" value="123 Nguyen Thi Thap P7 Q7"  disabled>
-                                    </div>
-                                </div>
-                                <div class="submit-phone" type="submit">Confirm</div>
+                                
                             </div>
                         </div>
                     </div>
@@ -201,5 +124,6 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/ViewCustomer.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
     display:block;
     text-align: center;
     margin:0 auto;
-    width:50%;
+    width:35%;
 }
 
 .main .content .body .register-customer.dark{
@@ -89,7 +89,7 @@
 }
 
 .main .content .body .register-customer .register-form .second {
-    width:79%;
+    width:84%;
 }
 
 .main .content .body .register-customer .register-form .second .address-input .address{
@@ -110,7 +110,7 @@
     border:none;
     text-align: center;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: #18f373;
     color:white;
 }
@@ -118,5 +118,47 @@
 .main .content .body .register-customer .register-form .submit-phone:hover{
     background-color: #1cda6b;
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 /* End Register Customer Form */
+
+/* Responsive */
+@media all and (max-width:1285.7px) {
+    .main .content .body .register-customer .register-form .second {
+        width:95%;
+    }
+}
+
+@media all and (max-width:991.98px){
+    .main .content .body .customer-list table tr th {
+        font-size: 14px;
+    }
+
+    .main .content .body .customer-list table tr td .customer .name {
+        font-size: 14px;
+        text-align: left;
+    }
+    .main .content .body .customer-list table tr td .phone{
+        font-size: 14px;
+    }
+    .main .content .body .customer-list table tr td .address{
+        font-size: 14px;
+    }
+}
+@media all and (max-width:767.98px){
+    .main .content .body .customer-list table tr td:nth-child(3){
+        display:none;
+    }
+    .main .content .body .customer-list table tr th:nth-child(3){
+        display:none;
+    }
+}
+@media (max-width:575.98px){
+    .main .content .body .customer-list table tr td:nth-child(2){
+        display:none;
+    }
+    .main .content .body .customer-list table tr th:nth-child(2){
+        display:none;
+    }
+}
+/* End Responsive */

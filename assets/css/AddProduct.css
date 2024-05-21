@@ -47,6 +47,13 @@
     margin-top: 15px;
 }
 
+.main .content .body .add-product .content .product-header {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+}
+
 .main .content .body .add-product .content form {
     display: flex;
     flex-direction: column;
@@ -243,6 +250,7 @@
     margin-top: 30px;
     margin-bottom: 20px;
     display: block;
+    text-align: center;
 }
 
 .main .content .body .add-product .content form .submit-product:hover {

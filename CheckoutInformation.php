@@ -17,56 +17,7 @@
                     </a>
                     <div class="menu">
                         <ul>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-users"></i>
-                                    </span>
-                                    <div class="text">
-                                        Account Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-brands fa-product-hunt"></i>
-                                    </span>
-                                    <div class="text">
-                                        Product Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-circle-user"></i>
-                                    </span>
-                                    <div class="text">
-                                        Customer Management
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-coins"></i>
-                                    </span>
-                                    <div class="text">
-                                        Transaction Processing
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <span class="icon-sider">
-                                        <i class="fa-solid fa-chart-simple"></i>
-                                    </span>
-                                    <div class="text">
-                                        Reporting and Analytics
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
             </div>
@@ -95,12 +46,6 @@
                             <div class="menu">
                                 <span class="icon-bg">
                                     <i class="fa-solid fa-moon"></i>
-                                </span>
-                                <span class="icon-cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    <div class="number-cart">
-                                        5+
-                                    </div>
                                 </span>
                             </div>
                             <div class="information">

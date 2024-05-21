@@ -38,56 +38,7 @@
                         </div>
                         <div class="sider-info">
                             <ul>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-users"></i>
-                                        </span>
-                                        <div class="text">
-                                            Account Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-brands fa-product-hunt"></i>
-                                        </span>
-                                        <div class="text">
-                                            Product Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-circle-user"></i>
-                                        </span>
-                                        <div class="text">
-                                            Customer Management
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-coins"></i>
-                                        </span>
-                                        <div class="text">
-                                            Transaction Processing
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="menu-item">
-                                        <span class="icon-sider">
-                                            <i class="fa-solid fa-chart-simple"></i>
-                                        </span>
-                                        <div class="text">
-                                            Reporting and Analytics
-                                        </div>
-                                    </div>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -95,12 +46,6 @@
                         <div class="menu">
                             <span class="icon-bg">
                                 <i class="fa-solid fa-moon"></i>
-                            </span>
-                            <span class="icon-cart">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <div class="number-cart">
-                                    5+
-                                </div>
                             </span>
                         </div>
                         <div class="information">
@@ -167,49 +112,8 @@
                             <div class="logo">
                                 <img src="./assets/images/logobig.png" alt="">
                             </div>
-                            <div class="title">
-                                View Product
-                            </div>
                             <form action="">
-                                <div class="fifth">
-                                    <div class="barcode-input">
-                                        <label for="barcode">Barcode :</label>
-                                        <input type="text" name="barcode" id="barcode" value="0705632441947" disabled>
-                                    </div>
-                                    <div class="date-input">
-                                        <label for="stock">Creation Date :</label>
-                                        <input type="text" name="date" id="date" value="14/12/2023" disabled>
-                                    </div>
-                                </div>
-                                <div class="second">
-                                    <div class="import-input">
-                                        <label for="import">Product Name :</label>
-                                        <input type="text" name="import" id="import" value="Iphone 9" disabled>
-                                    </div>
-                                    <div class="retail-input">
-                                        <label for="retail">Retail Price :</label>
-                                        <input type="text" name="retail" id="retail" value="23.33$" disabled>
-                                    </div>
-                                </div>
-                                <div class="third">
-                                    <div class="category-input">
-                                        <label for="category">Category :</label>
-                                        <input type="text" name="category" id="category" value="Apple" disabled>
-                                    </div>
-                                    <div class="stock-input">
-                                        <label for="stock">Color :</label>
-                                        <input type="text" name="stock" id="stock" value="Green" disabled>
-                                    </div>
-                                </div>
-                                <div class="fourth">
-                                    <div class="picture">
-                                        <label for="choose=pic">Picture :</label>
-                                    </div>
-                                    <div class="image">
-                                        <img src="./assets/images/avatar.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="submit-product" type="submit">Done</div>
+                                
                             </form>
                         </div>
                     </div>
@@ -219,5 +123,6 @@
 </div>
 
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/ViewProductEmployee.js"></script>
 </body>
 </html>

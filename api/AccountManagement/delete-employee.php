@@ -19,14 +19,7 @@
     $id = $params['id'];
 
     $sql = "DELETE FROM product WHERE ProductBarcode = '$id'";
-    // Kiểm tra xem sản phẩm có xóa được không , nếu được thì xóa, nếu không thì trở về trang ProductsList và truyền param errorMessage, khi trang ProductsList được load sẽ nhận errorMessage in ra thông báo lỗi và xóa đi param đó 
-    if(check_sql_query_statement($sql) == true) {
-          pre_statement_without_param_non_query($sql);
-          header("Location: /FinalWeb/ProductsList.php");
-          exit();
-    }
-    else {
-          header("Location: /FinalWeb/ProductsList.php?errorMessage=1");
-          exit();
-    }
+    pre_statement_without_param_non_query($sql);
+    header("Location: /FinalWeb/ProductsList.php");
+    exit();
 ?>

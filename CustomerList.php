@@ -25,7 +25,7 @@
                 <div class="header">
                     <div class="header-content">
                         <div class="current-content">
-                            Account Management
+                            Customer Management
                         </div>
                         <div class="current-content-smaller">
                             <div class="web-info">
@@ -46,12 +46,6 @@
                             <div class="menu">
                                 <span class="icon-bg">
                                     <i class="fa-solid fa-moon"></i>
-                                </span>
-                                <span class="icon-cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    <div class="number-cart">
-                                        5+
-                                    </div>
                                 </span>
                             </div>
                             <div class="information">

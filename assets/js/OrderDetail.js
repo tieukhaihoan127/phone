@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded",async () => {
             const total = document.querySelector(".main .content .body .order-detail .order-first .order-detail-info .detail-table table tr:nth-child(1) td .price");
             const given = document.querySelector(".main .content .body .order-detail .order-first .order-detail-info .detail-table table tr:nth-child(2) td .price");
             const paid = document.querySelector(".main .content .body .order-detail .order-first .order-detail-info .detail-table table tr:last-child td .price");
+            const current = document.querySelector(".main .content .body .order-detail .order-desc .order-detail-items .title");
+
 
             id.innerHTML = data.InvoiceID;
             name.innerHTML = data.CustomerName;
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded",async () => {
             total.innerHTML = data.TotalSum + " VND";
             given.innerHTML = data.GivenMoney + " VND";
             paid.innerHTML = data.PaidBack + " VND";
+            current.innerHTML = "Items From Order " + data.InvoiceID;
 
             const arr = data.CheckoutDetail;
             

@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded",async () => {
+    const checkURL = new URLSearchParams(window.location.search);
+
+    function removeURLParameter(paramKey) {
+        let url = new URL(window.location.href);
+        let params = new URLSearchParams(url.search);
+        params.delete(paramKey);
+        window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`);
+    }
+
+    if(checkURL.has('errorMessage')){
+        alert("Sản phẩm đã được thanh toán. Không thể thực hiện thao tác xóa !");
+        removeURLParameter('errorMessage');
+    }
+
     fetchEmployeeDataAndUpdateHTML();
 
     async function fetchEmployeeDataAndUpdateHTML() {
@@ -175,6 +189,7 @@ document.addEventListener("DOMContentLoaded",async () => {
         });
     }
     // End Add Products
+
     // Delete Products
     const deleteIcon = document.querySelectorAll(".main .content .body .body-content .second table tr td .action .delete-product");
     if(deleteIcon.length > 0) {
@@ -192,6 +207,29 @@ document.addEventListener("DOMContentLoaded",async () => {
         });
     }
     // End Delete Products
+
+    // View Products
+    const dataCheckType = async () => {
+        const checkType = await fetch("http://localhost:8080/FinalWeb/api/AccountManagement/get-account-type.php");
+        const dataCheck = await checkType.json();
+        return dataCheck;
+    }
+    
+    dataCheckType().then(data => {
+        const type = parseInt(data.data[0].AccountType);
+        const viewIcon = document.querySelector(".main .content .body .body-content .second table tr td .action .view-product");
+        const proID = viewIcon.getAttribute("view-id");
+
+        viewIcon.addEventListener("click",() => {
+            if(type == 1) {
+                window.location.href = "http://localhost:8080/FinalWeb/ViewProductEmployee.php?id=" + proID;
+            }
+            else {
+                window.location.href = "http://localhost:8080/FinalWeb/ViewProduct.php?id=" + proID;
+            }
+        });
+    });
+    // End View Products
 
         } catch (error) {
             console.error("Lỗi khi fetch dữ liệu nhân viên từ API:", error);

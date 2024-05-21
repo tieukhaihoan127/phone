@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded",async () => {
 
             const arr = data.OrderList;
             
-            if(arr.length > 1) {
+            if(arr.length > 0) {
                 arr.forEach(item => {
                     const temp = `<tr>
                                         <td>

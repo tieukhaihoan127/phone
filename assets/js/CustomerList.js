@@ -61,6 +61,16 @@ document.addEventListener("DOMContentLoaded",async () => {
                 });
             }
             // End View Customer Purchase History
+
+            const viewIcon = document.querySelectorAll(".main .content .body .customer-list table tr td .action .view-customer i");
+            if(viewIcon.length > 0) {
+                viewIcon.forEach(item => {
+                    item.addEventListener("click",() => {
+                        const id = item.getAttribute("customer-id");
+                        window.location.href = `http://localhost:8080/FinalWeb/CustomerDetail.php?id=${id}`;
+                    });
+                });
+            }
             
 
         } catch (error) {

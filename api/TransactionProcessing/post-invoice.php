@@ -1,10 +1,10 @@
 <?php
 require_once ('../Connection/data-provider.php');
+session_start();
 header('Content-Type: application/json');
 $rawData = file_get_contents("php://input");
 $data = json_decode($rawData, true);
 
-echo "okok";
 
 if (is_array($data)) {
     $get_invoice_id = "SELECT InvoiceID FROM invoice ORDER BY InvoiceID DESC LIMIT 1";
@@ -48,19 +48,32 @@ if (is_array($data)) {
         $id = "T".(string)$number;
     }
 
-    $sqlAddInvoice = "INSERT INTO invoice VALUES ('$id','0000000000',CURRENT_DATE(),0,0)";
+    $get_date = "SELECT DATE_FORMAT(CURRENT_DATE(), '%d/%m/%Y') AS InvoiceDate";
+    $array_date = get_query($get_date);
+    $date = $array_date["InvoiceDate"];
 
-    pre_statement_without_param_non_query($sqlAddInvoice);
+    $value = $_SESSION['username'];
+    $get_name = "SELECT SalesPersonFullName FROM salesperson WHERE SalesPersonID IN (SELECT SalesPersonID FROM accountallemployee WHERE UserName = '$value')";
+    $array = get_query($get_name);
+    $name = $array["SalesPersonFullName"];
+
+    $sum = 0;
 
     for ($i = 0; $i < count($data); $i++) {
-        $barcode = $data[$i]['ProductBarcode'];
-        $numberItems = $data[$i]['ProductQuantities'];
-        $total = $data[$i]['ProductTotal'];
-
-
-        $sqlAddInvoiceDetail = "INSERT INTO invoicedetail VALUES ('$id','$barcode',$numberItems,$total)";
-        pre_statement_without_param_non_query($sqlAddInvoiceDetail);
+        $sum+=$data[$i]['ProductTotal'];
     }
+
+    $results = array(
+        "EmployeeName" => $name,
+        "InvoiceID" => $id,
+        "InvoiceDateTime" => $date,
+        "TotalSum" => $sum,
+        "CheckoutList" => $data
+    );
+
+    // Lưu thông tin sản phẩm vào session
+    $_SESSION['order'] = $results;
+    echo json_encode($results);
 
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid data']);

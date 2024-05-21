@@ -117,7 +117,7 @@
                             <div class="title">
                                 Update Employee
                             </div>
-                            <form action="http://localhost:8080/FinalWeb/update-salesperson.php" method="POST" enctype="multipart/form-data">
+                            <form action="http://localhost:8080/FinalWeb/update-salesperson-info.php" method="POST" enctype="multipart/form-data">
                                 
                             </form>
                         </div>
@@ -128,7 +128,7 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
-    <script src="./assets//js/UpdateEmployee.js"></script>
+    <script src="./assets//js/UpdateEmployeeInfo.js"></script>
 </body>
 
 </html>

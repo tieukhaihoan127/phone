@@ -47,12 +47,6 @@
                                 <span class="icon-bg">
                                     <i class="fa-solid fa-moon"></i>
                                 </span>
-                                <span class="icon-cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    <div class="number-cart">
-                                        5+
-                                    </div>
-                                </span>
                             </div>
                             <div class="information">
                                 <div class="admin">

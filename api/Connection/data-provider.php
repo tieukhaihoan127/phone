@@ -83,6 +83,23 @@ function pre_statement_without_param_non_query($sql)
     }
 }
 
+function check_sql_query_statement($sql) {
+    $dbCon = get_connection();
+    if ($dbCon) {
+        try {
+            $stmt = $dbCon->prepare($sql);
+            if ($stmt->execute()) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (PDOException $ex) {
+            return false;
+        }
+    }
+    return false;
+}
+
 function get_query($sql)
 {
     $dbCon = get_connection();

@@ -18,6 +18,10 @@ if(urlParams.has('errorMessage')) {
 
 let api = "http://localhost:8080/FinalWeb/update-salesperson-first-password.php";
 
+if(urlParams.has('id')) {
+    api = `http://localhost:8080/FinalWeb/update-salesperson-first-password.php?id=${urlParams.get('id')}`;
+}
+
 const form = document.querySelector(".login form");
 
 form.action = api;

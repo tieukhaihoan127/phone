@@ -3,6 +3,38 @@
     margin-top: 3%;
 }
 
+.main .content .notify {
+    color: rgba(186, 20, 20, 0.744); 
+    background-color: #f3a7a7; 
+    border-radius:10px;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    right:0;
+    margin-top: 15px;
+}
+
+.main .content .notify.hide {
+    display: none;
+}
+
+.main .content .notify .delete-icon {
+    width:3px;
+    height:3px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+}
+
+.main .content .notify .delete-icon:hover {
+    cursor: pointer;
+}
+
 .main .content .body .add-product{
     background-color: #FFFFFF;
     padding:20px 30px;

@@ -1,3 +1,36 @@
+.notify {
+    color: rgba(186, 20, 20, 0.744); 
+    background-color: #f3a7a7; 
+    border-radius:10px;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    right:0;
+    top:5px;
+    margin-top: 15px;
+}
+
+.notify.hide {
+    display: none;
+}
+
+.notify .delete-icon {
+    width:3px;
+    height:3px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+}
+
+.notify .delete-icon:hover {
+    cursor: pointer;
+}
+
 .login {
     margin:0 auto;
     display: block;

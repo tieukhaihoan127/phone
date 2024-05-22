@@ -11,8 +11,12 @@
         if(check_data_query($checkQuery) == 0) {
             $sql = "UPDATE accountallemployee SET PASSWORD = '" .$passwordNew. "' WHERE UserName = '"  .$userName. "'";
             pre_statement_without_param_non_query($sql);
+            if(isset($_GET['id'])) {
+                $sqlActive = "UPDATE salesperson SET SalesPersonInactivate = 0 WHERE UserName = '$userName'";
+                pre_statement_without_param_non_query($sqlActive);
+            }
             header("Location: /FinalWeb/AdminDashboard.php?successMessage=1");
-        exit();
+            exit();
         }
         else { 
             header("Location: /FinalWeb/ChangePassword.php?errorMessage=1");

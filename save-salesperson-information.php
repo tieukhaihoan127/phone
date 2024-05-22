@@ -9,7 +9,7 @@
 
         $json_data = change_data_covert_json($sql, $paramenters);
         // echo $json_data; 
-        print_r($json_data);
+        print_r(pre_statement($sql,get_value_from_method ($paramenters)));
         // Send email in PHP
         $array_data = json_decode($json_data, true);
         if (is_array($array_data)){

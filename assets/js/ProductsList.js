@@ -13,11 +13,16 @@ document.addEventListener("DOMContentLoaded",async () => {
         removeURLParameter('errorMessage');
     }
 
-    fetchEmployeeDataAndUpdateHTML();
+    if(checkURL.has('search')) {
+        let searchApi = "http://localhost:8080/FinalWeb/api/ProductCatalog/get-product-search.php?search=" + checkURL.get('search');
+        fetchEmployeeDataAndUpdateHTML(searchApi);
+    }
+    else {
+        fetchEmployeeDataAndUpdateHTML();
+    }
 
-    async function fetchEmployeeDataAndUpdateHTML() {
+    async function fetchEmployeeDataAndUpdateHTML(api = "http://localhost:8080/FinalWeb/api/ProductCatalog/get-products.php") {
         try {
-            let api = "http://localhost:8080/FinalWeb/api/ProductCatalog/get-products.php";
             const res = await fetch(api);
             const data = await res.json();
             const arr = data.data;
@@ -230,6 +235,20 @@ document.addEventListener("DOMContentLoaded",async () => {
         });
     });
     // End View Products
+
+    // Search Products
+    const searchButton = document.querySelector(".main .content .body .body-content .first .search-input .form .search-button");
+    searchButton.addEventListener("click",() => {
+        const searchValue = document.querySelector(".main .content .body .body-content .first .search-input input[name='search']").value;
+        if(searchValue == ""){
+            window.location.href = "http://localhost:8080/FinalWeb/ProductsList.php";
+        }
+        else {
+            const tempLink = "http://localhost:8080/FinalWeb/ProductsList.php?search=" + searchValue;
+            window.location.href = tempLink;
+        }
+    });
+    // End Search Products
 
         } catch (error) {
             console.error("Lỗi khi fetch dữ liệu nhân viên từ API:", error);

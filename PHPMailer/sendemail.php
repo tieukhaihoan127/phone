@@ -33,7 +33,7 @@
             $mail->addAddress($email);
             $mail->Subject = 'DE';
             $token = createToken($email);
-            $mail->Body = "Click 'http://localhost:8080/FinalWeb/Login.php?email=$email&token=$token' to login";
+            $mail->Body = "Bạn phải truy cập đường dẫn sau đây để đăng nhập vào trang web : <br> 'http://localhost:8080/FinalWeb/Login.php?email=$email&token=$token'";
             $mail->send();
     }
     function createToken($email){

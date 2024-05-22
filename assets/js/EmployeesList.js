@@ -1,18 +1,29 @@
 document.addEventListener("DOMContentLoaded",async () => {
     const checkURL = new URLSearchParams(window.location.search);
 
+    function removeURLParameter(paramKey) {
+        let url = new URL(window.location.href);
+        let params = new URLSearchParams(url.search);
+        params.delete(paramKey);
+        window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`);
+    }
+
     if(checkURL.has('id') && checkURL.has('status')){
         let change = "http://localhost:8080/FinalWeb/api/AccountManagement/change-lock-status.php?id=" + checkURL.get('id') + "&status=" + checkURL.get('status');
         await fetch(change);
         fetchEmployeeDataAndUpdateHTML();
     }
+    else if(checkURL.has('search')){
+        let searchApi = "http://localhost:8080/FinalWeb/api/AccountManagement/get-salesperson-search.php?search=" + checkURL.get('search');
+        fetchEmployeeDataAndUpdateHTML(searchApi);
+
+    }
     else {
         fetchEmployeeDataAndUpdateHTML();
     }
 
-    async function fetchEmployeeDataAndUpdateHTML() {
+    async function fetchEmployeeDataAndUpdateHTML(api = "http://localhost:8080/FinalWeb/api/AccountManagement/get-salesperson.php") {
         try {
-            let api = "http://localhost:8080/FinalWeb/api/AccountManagement/get-salesperson.php";
             const res = await fetch(api);
             const data = await res.json();
             const arr = data.data;
@@ -51,11 +62,6 @@ document.addEventListener("DOMContentLoaded",async () => {
                         </button>
                     </td>
                     <td>
-                        <button class="view" view-sales-id=${item.SalesPersonID}>
-                            View
-                        </button>
-                    </td>
-                    <td>
                         <div class="action">
                             <div class="view-employee" view-id=${item.SalesPersonID}>
                                 <i class="fa-regular fa-eye"></i>
@@ -63,22 +69,12 @@ document.addEventListener("DOMContentLoaded",async () => {
                             <div class="update-employee" update-id=${item.SalesPersonID}>
                                 <i class="fa-solid fa-pen"></i>
                             </div>
-                            <div class="delete-employee" delete-id=${item.SalesPersonID}>
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
                         </div>
                     </td>
                 </tr>`;
         
                 tableBody.insertAdjacentHTML("beforeend", temp);
             });
-
-            // Change Status Employee
-    const changeStatusButton = document.querySelector(".main .content .body .body-content .second table tr td .status");
-    changeStatusButton.addEventListener("click",() => {
-        const state = changeStatusButton.getAttribute("status-id");
-    });
-    // End Change Status Employee
 
     // Add Employee
     const add = document.querySelector(".main .content .body .body-content .first .add-account");
@@ -169,6 +165,20 @@ document.addEventListener("DOMContentLoaded",async () => {
         });
     }
     // End Lock/Unlock Employee
+
+    // Search Employee
+    const searchButton = document.querySelector(".main .content .body .body-content .first .search-input .form .search-button");
+    searchButton.addEventListener("click",() => {
+        const searchValue = document.querySelector(".main .content .body .body-content .first .search-input input[name='search']").value;
+        if(searchValue == ""){
+            window.location.href = "http://localhost:8080/FinalWeb/EmployeesList.php";
+        }
+        else {
+            const tempLink = "http://localhost:8080/FinalWeb/EmployeesList.php?search=" + searchValue;
+            window.location.href = tempLink;
+        }
+    });
+    // End Search Employee
 
         } catch (error) {
             console.error("Lỗi khi fetch dữ liệu nhân viên từ API:", error);

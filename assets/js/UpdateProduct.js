@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded",async () => {
         <div class="third">
         <div class="category-input">
             <label for="category">Category :</label>
-            <input type="text" name="category" id="category" value="${arr.CategoryID}" required>
+            <input type="text" name="category" id="category" value="${arr.CategoryName}" required>
         </div>
         <div class="stock-input">
             <label for="stock">Color :</label>

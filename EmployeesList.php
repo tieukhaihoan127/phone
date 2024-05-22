@@ -1,3 +1,35 @@
+<?php
+require_once("./api/Connection/data-provider.php");
+session_start(); 
+
+if (!isset($_SESSION['username'])) {
+    header('Location: Login.php');
+    exit();
+}
+else {
+    $username = $_SESSION['username'];
+
+    $sqlActive = "SELECT SalesPersonInactivate FROM salesperson WHERE UserName = '$username'";
+    $check_arr = get_query($sqlActive);
+    $inactiveCheck = $check_arr['SalesPersonInactivate'];
+
+    if($inactiveCheck == 1) {
+        header('Location: Login.php');
+        exit();
+    }
+
+    $sqlLock = "SELECT SalesPersonLockAccount FROM salesperson WHERE UserName = '$username'";
+    $check_lock = get_query($sqlLock);
+    $lockCheck = $check_lock['SalesPersonLockAccount'];
+
+    if($lockCheck == 1) {
+        header('Location: Login.php');
+        exit();
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,13 +150,13 @@
                                         </div>
                                 </button>
                                 <div class="search-input">
-                                    <form action="">
+                                    <div class="form">
                                         <span class="icon-search">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </span>
                                         <input type="text" value="" name="search">
                                         <button type="submit" class="search-button">Search</button>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                             <div class="second">
@@ -136,7 +168,6 @@
                                             <th>Status</th>
                                             <th>Manage</th>
                                             <th>Resend Mail</th>
-                                            <th>View Sales</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>

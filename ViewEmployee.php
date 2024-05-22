@@ -1,3 +1,35 @@
+<?php
+require_once("./api/Connection/data-provider.php");
+session_start(); 
+
+if (!isset($_SESSION['username'])) {
+    header('Location: Login.php');
+    exit();
+}
+else {
+    $username = $_SESSION['username'];
+
+    $sqlActive = "SELECT SalesPersonInactivate FROM salesperson WHERE UserName = '$username'";
+    $check_arr = get_query($sqlActive);
+    $inactiveCheck = $check_arr['SalesPersonInactivate'];
+
+    if($inactiveCheck == 1) {
+        header('Location: Login.php');
+        exit();
+    }
+
+    $sqlLock = "SELECT SalesPersonLockAccount FROM salesperson WHERE UserName = '$username'";
+    $check_lock = get_query($sqlLock);
+    $lockCheck = $check_lock['SalesPersonLockAccount'];
+
+    if($lockCheck == 1) {
+        header('Location: Login.php');
+        exit();
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

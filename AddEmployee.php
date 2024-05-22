@@ -1,43 +1,53 @@
 <?php
-    require_once('./save-salesperson-information.php');
-    require("vendor/autoload.php");
-    use Cloudinary\Configuration\Configuration;
-    use Cloudinary\Api\Upload\UploadApi;
+require_once('./save-salesperson-information.php');
+require("vendor/autoload.php");
 
-    Configuration::instance([
-        'cloud' => [
-        'cloud_name' => 'dvvdcqzmn', 
-        'api_key' => '326819667684664', 
-        'api_secret' => 'uHtSnZNFq0uwvqrryB3t7EnnBJM'],
-        'url' => [
-        'secure' => true]]);
+use Cloudinary\Configuration\Configuration;
+use Cloudinary\Api\Upload\UploadApi;
 
-    if(isset($_FILES['avatar'])) {
+Configuration::instance([
+    'cloud' => [
+        'cloud_name' => 'dvvdcqzmn',
+        'api_key' => '326819667684664',
+        'api_secret' => 'uHtSnZNFq0uwvqrryB3t7EnnBJM'
+    ],
+    'url' => [
+        'secure' => true
+    ]
+]);
+
+
+if (isset($_FILES['avatar'])) {
+    if($_FILES['avatar']['size'] > 0) {
         $imgName =  $_FILES['avatar']['name'];
-        $imgPath = $_FILES['avatar']['tmp_name']; 
-        $uploadApi = new UploadApi(); 
-        $image = $uploadApi->upload($imgPath); 
-        $avatarLink =  $image['secure_url']; 
+        $imgPath = $_FILES['avatar']['tmp_name'];
+        $uploadApi = new UploadApi();
+        $image = $uploadApi->upload($imgPath);
+        $avatarLink =  $image['secure_url'];
     }
-
-    $err='';
-    if($_SERVER['REQUEST_METHOD']=='POST'){
-        $conn = get_connection();
-        $sql = 'SELECT * FROM accountallemployee WHERE UserName = ?';
-        $stmt= $conn->prepare($sql);
-        $username = substr($_POST['email'],0,strpos($_POST['email'],"@"));
-        $stmt->execute(array($username));
-        if($stmt->fetch()){
-            $err="your email is used!";
-        }else{
-            $emailParts = explode('@', $_POST['email']);
-            $pass = $emailParts[0];
-            echo $pass;
-            if(saveNewSaleperson($avatarLink,$pass,$_POST['fullname'],$_POST['email'],$_POST['address'],$_POST['gender'],$_POST['dob']))
-            header('location: EmployeesList.php');
-        }
+    else {
+        $avatarLink = 'https://res.cloudinary.com/dvvdcqzmn/image/upload/v1716311694/soarl3teiv3qegjqbgct.png';
+    }
 }
-?>  
+
+
+$err = '';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $conn = get_connection();
+    $sql = 'SELECT * FROM accountallemployee WHERE UserName = ?';
+    $stmt = $conn->prepare($sql);
+    $username = substr($_POST['email'], 0, strpos($_POST['email'], "@"));
+    $stmt->execute(array($username));
+    if ($stmt->fetch()) {
+        $err = "Email đã tồn tại!";
+    } else {
+        $emailParts = explode('@', $_POST['email']);
+        $pass = $emailParts[0];
+        if (saveNewSaleperson($avatarLink, $pass, $_POST['fullname'], $_POST['email'], $_POST['address'], $_POST['gender'], $_POST['dob']))
+            header('location: EmployeesList.php');
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +66,7 @@
     <div class="main">
         <div class="sider left">
             <a href="/" class="logo">
-                <img src="./assets/images/logobig.png" alt="Website Icon">
+                <img src="https://res.cloudinary.com/dwdhkwu0r/image/upload/v1715189850/hccy3yljev3qcyiep0oa.png" alt="Website Icon">
             </a>
             <div class="menu">
                 <ul>
@@ -148,6 +158,16 @@
                     </div>
                 </div>
             </div>
+            <?php
+            if ($err != '') {
+                echo '<div class="notify"> 
+                        <label > Email đã tồn tại ! </label> 
+                        <div class="delete-icon">
+                            X
+                        </div>
+                    </div>';
+            }
+            ?>
             <div class="body">
                 <div class="container">
                     <div class="add-product">
@@ -201,15 +221,8 @@
                                     <div class="image">
                                         <img id="ava_preview" src="./assets/images/avatar.jpg" alt="">
                                     </div>
-                                    <?php
-                                        if($err !=''){
-                                            echo '<div style="color: red; background-color: #f3a7a7; border-radius:10px;padding: 10px;"> <label >'.$err.'</label> </div>';
-                                        }
-                                    ?>
-                                    
                                 </div>
                                 <button class="submit-product" id="submitBtn" type="submit">Done</button>
-                                
                             </form>
                         </div>
                     </div>
@@ -220,20 +233,31 @@
 
     <script src="./assets/js/script.js"></script>
     <script>
-    const fileInput = document.getElementById('customFile');
-    const imagePreview = document.querySelector('#ava_preview');
+        const fileInput = document.getElementById('customFile');
+        const imagePreview = document.querySelector('#ava_preview');
 
-    fileInput.addEventListener('change', function() {
-        const file = this.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                imagePreview.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
+        fileInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        const dIcon = document.querySelector(".main .content .notify .delete-icon");
+        if (dIcon) {
+            const notify = document.querySelector(".main .content .notify");
+            dIcon.addEventListener("click", () => {
+                notify.classList.add("hide");
+            });
+
+            setTimeout(() => {
+                notify.classList.add("hide");
+            }, 3000);
         }
-    });
-
     </script>
 </body>
 

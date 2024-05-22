@@ -17,7 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("search").value = "";
         const response = await fetch(api);
         const data = await response.json();
-        displayProducts(data.data);
+        if(data.data.length  > 0) {
+            displayProducts(data.data);
+        }
+        else {
+            alert("Sản phẩm không tồn tại !");
+        }
     });
 
     // Tìm kiếm theo barcode
@@ -27,7 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("barcode").value = "";
         const response = await fetch(api);
         const data = await response.json();
-        displayProducts(data.data);
+        if(data.data.length  > 0) {
+            displayProducts(data.data);
+        }
+        else {
+            alert("Sản phẩm không tồn tại !");
+        }
     });
 
     // Render sản phẩm 
